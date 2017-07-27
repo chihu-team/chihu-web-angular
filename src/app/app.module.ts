@@ -4,6 +4,8 @@ import { HttpModule }    from '@angular/http';
 import { AppRoutesModule } from './app-routes/app-routes.module';
 import { AppComponent } from './app.component';
 import { CanActivateService } from './app-routes/can-activate.service';
+import { UserService } from './service/user.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,9 +14,10 @@ import { CanActivateService } from './app-routes/can-activate.service';
   imports: [
     BrowserModule,
     AppRoutesModule,
-    HttpModule
+    HttpModule,
+    BrowserAnimationsModule
   ],
-  providers: [CanActivateService],
+  providers: [CanActivateService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

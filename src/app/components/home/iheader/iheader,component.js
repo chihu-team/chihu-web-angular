@@ -13,12 +13,75 @@ export default StyleSheet.create({
     'borderBottom': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'rgba(30, 35, 42, 0.06)' }],
     'boxShadow': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'px', 'value': 3 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'string', 'value': 'rgba(0, 34, 77, 0.05)' }],
     'backgroundClip': 'content-box',
-    'overflow': 'hidden',
     'minWidth': [{ 'unit': 'px', 'value': 1032 }],
     'position': 'fixed',
     'top': [{ 'unit': 'px', 'value': 0 }],
     'left': [{ 'unit': 'px', 'value': 0 }],
     'zIndex': '2'
+  },
+  'header ih_wrap': {
+    'width': [{ 'unit': 'px', 'value': 1000 }],
+    'height': [{ 'unit': '%V', 'value': 1 }],
+    'margin': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'string', 'value': 'auto' }, { 'unit': 'px', 'value': 0 }, { 'unit': 'string', 'value': 'auto' }],
+    'position': 'relative'
+  },
+  'header ih_wrap popover_wrap': {
+    'position': 'absolute',
+    'top': [{ 'unit': 'px', 'value': 60 }],
+    'right': [{ 'unit': 'px', 'value': -60 }]
+  },
+  'header ih_wrap popover-content-me': {
+    'width': [{ 'unit': 'px', 'value': 118 }],
+    'background': '#fff',
+    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#e7eaf1' }],
+    'boxShadow': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 5 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'string', 'value': 'rgba(0, 34, 77, 0.1)' }],
+    'borderRadius': '4px',
+    'overflow': 'hidden'
+  },
+  'header ih_wrap popover-content-me popover-arrow': {
+    'display': 'block',
+    'borderTopWidth': [{ 'unit': 'px', 'value': 0 }],
+    'position': 'absolute',
+    'top': [{ 'unit': 'px', 'value': 0 }],
+    'left': [{ 'unit': 'px', 'value': 52 }],
+    'marginTop': [{ 'unit': 'px', 'value': -8 }],
+    'borderBottomColor': '#e7eaf1',
+    'width': [{ 'unit': 'px', 'value': 0 }],
+    'height': [{ 'unit': 'px', 'value': 0 }]
+  },
+  'header ih_wrap popover-content-me popover-arrow:after': {
+    'content': '''',
+    'marginTop': [{ 'unit': 'px', 'value': 1 }],
+    'top': [{ 'unit': 'px', 'value': 0 }],
+    'left': [{ 'unit': 'px', 'value': 0 }],
+    'position': 'absolute',
+    'border': [{ 'unit': 'px', 'value': 8 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': 'transparent' }],
+    'display': 'block',
+    'borderTopWidth': [{ 'unit': 'px', 'value': 0 }],
+    'borderBottomColor': '#fff'
+  },
+  'header ih_wrap popover-content-me Menu': {
+    'padding': [{ 'unit': 'px', 'value': 6 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 6 }, { 'unit': 'px', 'value': 0 }],
+    'width': [{ 'unit': '%H', 'value': 1 }]
+  },
+  'header ih_wrap popover-content-me Menu a': {
+    'display': 'block',
+    'height': [{ 'unit': 'px', 'value': 36 }],
+    'lineHeight': [{ 'unit': 'px', 'value': 36 }],
+    'color': '#262626',
+    'padding': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }],
+    'textAlign': 'left',
+    'boxSizing': 'border-box',
+    'textDecoration': 'none',
+    'cursor': 'pointer',
+    'fontSize': [{ 'unit': 'px', 'value': 12 }]
+  },
+  'header ih_wrap popover-content-me Menu a svg': {
+    'width': [{ 'unit': 'px', 'value': 16 }],
+    'height': [{ 'unit': 'px', 'value': 16 }],
+    'verticalAlign': 'text-bottom',
+    'marginRight': [{ 'unit': 'px', 'value': 12 }],
+    'fill': '#9fadc7'
   },
   'header AppHeader-inner': {
     'display': 'flex',
