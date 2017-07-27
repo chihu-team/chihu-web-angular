@@ -1,0 +1,17 @@
+<div class="group-inputs">
+
+    <div class="input-wrapper">
+        <input type="text" [(ngModel)]="name" placeholder="账号">
+    </div>
+    <div class="input-wrapper">
+        <input type="password" [(ngModel)]="pass" placeholder="密码">
+    </div>
+
+
+</div>
+
+<div (click)="login();" class="btm">
+    登录
+</div>
+
+<p class="agreement-tip">无法登陆？</p>

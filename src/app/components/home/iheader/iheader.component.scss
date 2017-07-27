@@ -1,0 +1,65 @@
+.iheader_wrap {
+    height: 55px;
+    width: 100%;
+    display: block;
+}
+
+header {
+    width: 100%;
+    height: 53px;
+    background: #fff;
+    border-bottom: 1px solid rgba(30, 35, 42, .06);
+    box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .05);
+    background-clip: content-box;
+    overflow: hidden;
+    min-width: 1032px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    .AppHeader-inner {
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        height: 52px;
+        padding: 0 16px;
+        background: #fff;
+        align-items: center;
+        transition: transform .3s, -webkit-transform .3s;
+        .ch {
+            color: rgb(15, 136, 235);
+            margin-right: 10px;
+        }
+        nav {
+            color: #333;
+            a {
+                font-size: 15px;
+                line-height: 15px;
+                padding: 0 15px;
+                text-decoration: none;
+                color: #8590a6;
+            }
+            .active {
+                color: #333;
+            }
+        }
+        .user-data {
+            display: flex;
+            flex: 1;
+            justify-content: flex-end;
+            align-items: center;
+            svg {
+                vertical-align: text-bottom;
+                margin-right: 40px;
+                fill: #9fadc7;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        .userimg {
+            width: 34px;
+            height: 34px;
+            display: block;
+        }
+    }
+}

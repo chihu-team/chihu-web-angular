@@ -1,0 +1,27 @@
+.index-home-page {
+    .TopstoryHeader {
+        display: flex;
+        line-height: 58px;
+        padding: 0 20px;
+        background: #fff;
+        margin-bottom: 10px;
+        border: 1px solid #e7eaf1;
+        box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
+        border-radius: 2px;
+        box-sizing: border-box;
+        a {
+            text-decoration: none;
+            margin-right: 40px;
+            font-size: 16px;
+            display: inline-block;
+        }
+        .TopstoryHeader-nav {
+            svg {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+                vertical-align: text-bottom;
+            }
+        }
+    }
+}

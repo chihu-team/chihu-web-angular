@@ -1,0 +1,22 @@
+<div class="login-page">
+    <section class="top">
+        <h1 class="logo">吃乎</h1>
+        <h2 class="dec">与世界分享你的知识、心情和美食</h2>
+    </section>
+    <div class="index-tab-navs">
+        <div class="navs-slider">
+            <a [routerLink]="['signup']" (click)="change(0);" routerLinkActive="active">注册</a>
+            <a [routerLink]="['signin']" (click)="change(1);" routerLinkActive="active">登录</a>
+            <span class="navs-slider-bar"></span>
+        </div>
+    </div>
+
+    <section class="router-outlet-wrap">
+        <router-outlet></router-outlet>
+        <a href="https://github.com/kongdewen1994/chihu2" target="_blank">
+            <div class="dowm">
+                下载吃乎 App
+            </div>
+        </a>
+    </section>
+</div>

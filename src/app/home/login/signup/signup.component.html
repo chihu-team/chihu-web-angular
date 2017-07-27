@@ -1,0 +1,19 @@
+<div class="group-inputs">
+
+    <div class="input-wrapper">
+        <input type="text" [(ngModel)]="name" placeholder="账号">
+    </div>
+    <div class="input-wrapper">
+        <input type="text" [(ngModel)]="nickname" placeholder="昵称">
+    </div>
+    <div class="input-wrapper">
+        <input type="password" [(ngModel)]="pass" placeholder="密码">
+    </div>
+
+</div>
+
+<div class="btm" (click)="regist();">
+    注册吃乎
+</div>
+
+<p class="agreement-tip">点击「注册」按钮，即代表你同意<a>《吃乎协议》</a></p>
