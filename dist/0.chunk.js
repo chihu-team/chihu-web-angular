@@ -94,7 +94,7 @@ CardModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */]
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
         ],
         exports: [__WEBPACK_IMPORTED_MODULE_3__card_component__["a" /* CardComponent */]],
         declarations: [__WEBPACK_IMPORTED_MODULE_3__card_component__["a" /* CardComponent */]]
@@ -210,7 +210,7 @@ FoodModule = __decorate([
 /***/ "../../../../../src/app/components/home/iheader/iheader.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"iheader_wrap\">\n    <header>\n        <div class=\"ih_wrap\">\n            <div class=\"AppHeader-inner\">\n                <h1 class=\"ch\">吃乎</h1>\n                <nav>\n                    <a [routerLink]=\"['/index']\" routerLinkActive=\"active\">首页</a>\n                    <a [routerLink]=\"['/share']\" routerLinkActive=\"active\" href=\"\">发现</a>\n                    <a href=\"\">问题</a>\n                </nav>\n                <div class=\"user-data\">\n                    <svg viewBox=\"0 0 20 22\" class=\"Icon Icon--news\" width=\"20\" height=\"20\" aria-hidden=\"true\" style=\"height: 20px; width: 20px;\"><title></title><g><path d=\"M2.502 14.08C3.1 10.64 2 3 8.202 1.62 8.307.697 9.08 0 10 0s1.694.697 1.797 1.62C18 3 16.903 10.64 17.497 14.076c.106 1.102.736 1.855 1.7 2.108.527.142.868.66.793 1.206-.075.546-.542.95-1.09.943H1.1C.55 18.34.084 17.936.01 17.39c-.075-.547.266-1.064.794-1.206.963-.253 1.698-1.137 1.698-2.104zM10 22c-1.417.003-2.602-1.086-2.73-2.51-.004-.062.02-.124.063-.17.043-.045.104-.07.166-.07h5c.063 0 .124.025.167.07.044.046.067.108.063.17-.128 1.424-1.313 2.513-2.73 2.51z\"></path></g></svg>\n                    <svg viewBox=\"0 0 20 20\" class=\"Icon Icon--message\" width=\"20\" height=\"20\" aria-hidden=\"true\" style=\"height: 20px; width: 20px;\"><title></title><g><path d=\"M9 0C3.394 0 0 4.13 0 8c0 1.654.522 3.763 2.014 5.566.314.292.518.82.454 1.17-.165 1.488-.842 1.905-.842 1.905-.328.332.105.67.588.582 1.112-.2 2.07-.58 3.526-1.122.4-.202.464-.147.78-.078C11.524 17.764 18 14 18 8c0-3.665-3.43-8-9-8z\"></path><path d=\"M19.14 9.628c.758.988.86 2.01.86 3.15 0 1.195-.62 3.11-1.368 3.938-.21.23-.354.467-.308.722.12 1.073.614 1.5.614 1.5.237.24-.188.563-.537.5-.802-.145-1.494-.42-2.545-.81-.29-.146-.336-.106-.563-.057-2.043.712-4.398.476-6.083-.926 5.964-.524 8.726-3.03 9.93-8.016z\"></path></g></svg>\n                    <img (click)=\"toggleStatus();\" class=\"userimg\" src=\"https://pic1.zhimg.com/3f13b6650ec79351067d4bc1c2621cac_is.jpg\" alt=\"\">\n                </div>\n\n            </div>\n            <div [@memuStatus]=\"status\" class=\"popover_wrap\">\n                <div class=\"popover-content-me\">\n                    <span class=\"popover-arrow\"></span>\n                    <div class=\"Menu\">\n                        <a href=\"\"><svg viewBox=\"0 0 20 20\" class=\"Icon Button-icon Icon--profile\" width=\"14\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 14px;\"><title></title><g><path d=\"M13.4170937,10.9231839 C13.0412306,11.5757324 12.5795351,12.204074 12.6542924,12.7864225 C12.9457074,15.059449 18.2164534,14.5560766 19.4340179,15.8344151 C20,16.4286478 20,16.4978969 20,19.9978966 C13.3887136,19.9271077 6.63736785,19.9978966 0,19.9978966 C0.0272309069,16.4978969 0,16.5202878 0.620443914,15.8344151 C1.92305664,14.3944356 7.20116276,15.1185829 7.40016946,12.7013525 C7.44516228,12.1563518 7.02015319,11.5871442 6.63736814,10.9228381 C4.51128441,7.2323256 3.69679769,4.67956187e-11 10,9.32587341e-14 C16.3032023,-4.66091013e-11 15.4216968,7.4429255 13.4170937,10.9231839 Z\"></path></g></svg>我的主页</a>\n                        <a href=\"\"><svg viewBox=\"0 0 20 20\" class=\"Icon Button-icon Icon--setting\" width=\"14\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 14px;\"><title></title><g><path d=\"M18.868 15.185c-.164.096-.315.137-.452.137-.123 0-1.397-.26-1.617-.233-1.355.013-1.782 1.275-1.836 1.74-.055.454 0 .893.19 1.304.138.29.125.577-.067.85-.863.893-2.165 1.016-2.357 1.016-.123 0-.247-.055-.356-.15-.11-.097-.685-1.14-1.07-1.47-1.303-.954-2.246-.328-2.63 0-.397.33-.67.7-.835 1.126-.07.18-.18.302-.33.37-1.354.426-2.918-.92-3.014-1.056-.082-.11-.123-.22-.123-.356-.014-.138.383-1.276.342-1.688-.342-1.9-1.836-1.687-2.096-1.673-.303.014-.604.068-.92.178-.205.056-.396.03-.588-.054-.888-.462-1.137-2.332-1.11-2.51.055-.315.192-.52.438-.604.425-.164.81-.452 1.15-.85.932-1.262.344-2.25 0-2.634-.34-.356-.725-.645-1.15-.81-.137-.04-.233-.15-.328-.315C-.27 6.07.724 4.95.978 4.733c.255-.22.6-.055.723 0 .426.164.878.22 1.344.15C4.7 4.636 4.784 3.14 4.81 2.908c.015-.247-.11-1.29-.136-1.4-.027-.123-.014-.22.027-.315C5.318.178 7.073 0 7.223 0c.178 0 .33.055.44.178.108.124.63 1.11 1 1.4.398.338 1.582.83 2.588.013.398-.273.96-1.288 1.083-1.412.123-.123.26-.178.384-.178 1.56 0 2.33 1.03 2.438 1.22.083.124.096.248.07.37-.03.152-.33 1.153-.262 1.606.366 1.537 1.384 1.742 1.89 1.783.494.027 1.645-.357 1.81-.344.164.014.315.083.424.206.535.31.85 1.715.905 2.14.027.233-.014.44-.11.562-.11.138-1.165.714-1.48 1.112-.855.982-.342 2.25-.068 2.606.26.37 1.22.905 1.288.96.15.137.26.302.315.494.146 1.413-.89 2.387-1.07 2.47zm-8.905-.535c.644 0 1.246-.123 1.822-.356.575-.248 1.082-.59 1.493-1.016.425-.425.754-.92 1-1.495.247-.562.357-1.18.357-1.81 0-.66-.11-1.262-.356-1.825-.248-.562-.577-1.056-1.002-1.48-.41-.427-.918-.756-1.493-1.003-.576-.233-1.178-.357-1.822-.357-.644 0-1.247.124-1.81.357-.56.247-1.067.576-1.478 1.002-.425.425-.768.92-1 1.48-.247.564-.37 1.167-.37 1.826 0 .644.123 1.248.37 1.81.232.563.575 1.07 1 1.495.424.426.917.768 1.48 1.016.56.233 1.164.356 1.808.356z\"></path></g></svg>设置</a>\n                        <a (click)=\"exit();\"><svg viewBox=\"0 0 20 20\" class=\"Icon Button-icon Icon--logout\" width=\"14\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 14px;\"><title></title><g><path d=\"M0 10C0 7.242 1.154 4.58 3.167 2.697c.51-.477 1.31-.45 1.79.06.475.51.45 1.31-.06 1.787C3.37 5.975 2.53 7.91 2.53 10c0 4.118 3.35 7.468 7.47 7.468 4.12 0 7.47-3.35 7.47-7.47 0-2.04-.81-3.948-2.28-5.37-.5-.485-.514-1.286-.028-1.788.485-.5 1.286-.517 1.79-.03C18.915 4.712 20 7.265 20 10c0 5.512-4.486 9.998-10 9.998s-10-4.486-10-10zm8.7-.483V1.26C8.7.564 9.26 0 9.96 0c.695 0 1.26.564 1.26 1.26v8.257c0 .696-.565 1.26-1.26 1.26-.698 0-1.26-.564-1.26-1.26z\"></path></g></svg>退出</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n    </header>\n</div>"
+module.exports = "<div class=\"iheader_wrap\">\n    <header>\n        <div class=\"ih_wrap\">\n            <div class=\"AppHeader-inner\">\n                <h1 class=\"ch\">吃乎</h1>\n                <nav>\n                    <a [routerLink]=\"['/index']\" routerLinkActive=\"active\">首页</a>\n                    <a [routerLink]=\"['/share']\" routerLinkActive=\"active\">发现</a>\n                    <a [routerLink]=\"['/article']\" routerLinkActive=\"active\">文章</a>\n                </nav>\n                <div class=\"user-data\">\n                    <svg viewBox=\"0 0 20 22\" class=\"Icon Icon--news\" width=\"20\" height=\"20\" aria-hidden=\"true\" style=\"height: 20px; width: 20px;\"><title></title><g><path d=\"M2.502 14.08C3.1 10.64 2 3 8.202 1.62 8.307.697 9.08 0 10 0s1.694.697 1.797 1.62C18 3 16.903 10.64 17.497 14.076c.106 1.102.736 1.855 1.7 2.108.527.142.868.66.793 1.206-.075.546-.542.95-1.09.943H1.1C.55 18.34.084 17.936.01 17.39c-.075-.547.266-1.064.794-1.206.963-.253 1.698-1.137 1.698-2.104zM10 22c-1.417.003-2.602-1.086-2.73-2.51-.004-.062.02-.124.063-.17.043-.045.104-.07.166-.07h5c.063 0 .124.025.167.07.044.046.067.108.063.17-.128 1.424-1.313 2.513-2.73 2.51z\"></path></g></svg>\n                    <svg viewBox=\"0 0 20 20\" class=\"Icon Icon--message\" width=\"20\" height=\"20\" aria-hidden=\"true\" style=\"height: 20px; width: 20px;\"><title></title><g><path d=\"M9 0C3.394 0 0 4.13 0 8c0 1.654.522 3.763 2.014 5.566.314.292.518.82.454 1.17-.165 1.488-.842 1.905-.842 1.905-.328.332.105.67.588.582 1.112-.2 2.07-.58 3.526-1.122.4-.202.464-.147.78-.078C11.524 17.764 18 14 18 8c0-3.665-3.43-8-9-8z\"></path><path d=\"M19.14 9.628c.758.988.86 2.01.86 3.15 0 1.195-.62 3.11-1.368 3.938-.21.23-.354.467-.308.722.12 1.073.614 1.5.614 1.5.237.24-.188.563-.537.5-.802-.145-1.494-.42-2.545-.81-.29-.146-.336-.106-.563-.057-2.043.712-4.398.476-6.083-.926 5.964-.524 8.726-3.03 9.93-8.016z\"></path></g></svg>\n                    <img (click)=\"toggleStatus();\" class=\"userimg\" src=\"https://pic1.zhimg.com/3f13b6650ec79351067d4bc1c2621cac_is.jpg\" alt=\"\">\n                </div>\n\n            </div>\n            <div [@memuStatus]=\"status\" class=\"popover_wrap\">\n                <div class=\"popover-content-me\">\n                    <span class=\"popover-arrow\"></span>\n                    <div class=\"Menu\">\n                        <a href=\"\"><svg viewBox=\"0 0 20 20\" class=\"Icon Button-icon Icon--profile\" width=\"14\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 14px;\"><title></title><g><path d=\"M13.4170937,10.9231839 C13.0412306,11.5757324 12.5795351,12.204074 12.6542924,12.7864225 C12.9457074,15.059449 18.2164534,14.5560766 19.4340179,15.8344151 C20,16.4286478 20,16.4978969 20,19.9978966 C13.3887136,19.9271077 6.63736785,19.9978966 0,19.9978966 C0.0272309069,16.4978969 0,16.5202878 0.620443914,15.8344151 C1.92305664,14.3944356 7.20116276,15.1185829 7.40016946,12.7013525 C7.44516228,12.1563518 7.02015319,11.5871442 6.63736814,10.9228381 C4.51128441,7.2323256 3.69679769,4.67956187e-11 10,9.32587341e-14 C16.3032023,-4.66091013e-11 15.4216968,7.4429255 13.4170937,10.9231839 Z\"></path></g></svg>我的主页</a>\n                        <a href=\"\"><svg viewBox=\"0 0 20 20\" class=\"Icon Button-icon Icon--setting\" width=\"14\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 14px;\"><title></title><g><path d=\"M18.868 15.185c-.164.096-.315.137-.452.137-.123 0-1.397-.26-1.617-.233-1.355.013-1.782 1.275-1.836 1.74-.055.454 0 .893.19 1.304.138.29.125.577-.067.85-.863.893-2.165 1.016-2.357 1.016-.123 0-.247-.055-.356-.15-.11-.097-.685-1.14-1.07-1.47-1.303-.954-2.246-.328-2.63 0-.397.33-.67.7-.835 1.126-.07.18-.18.302-.33.37-1.354.426-2.918-.92-3.014-1.056-.082-.11-.123-.22-.123-.356-.014-.138.383-1.276.342-1.688-.342-1.9-1.836-1.687-2.096-1.673-.303.014-.604.068-.92.178-.205.056-.396.03-.588-.054-.888-.462-1.137-2.332-1.11-2.51.055-.315.192-.52.438-.604.425-.164.81-.452 1.15-.85.932-1.262.344-2.25 0-2.634-.34-.356-.725-.645-1.15-.81-.137-.04-.233-.15-.328-.315C-.27 6.07.724 4.95.978 4.733c.255-.22.6-.055.723 0 .426.164.878.22 1.344.15C4.7 4.636 4.784 3.14 4.81 2.908c.015-.247-.11-1.29-.136-1.4-.027-.123-.014-.22.027-.315C5.318.178 7.073 0 7.223 0c.178 0 .33.055.44.178.108.124.63 1.11 1 1.4.398.338 1.582.83 2.588.013.398-.273.96-1.288 1.083-1.412.123-.123.26-.178.384-.178 1.56 0 2.33 1.03 2.438 1.22.083.124.096.248.07.37-.03.152-.33 1.153-.262 1.606.366 1.537 1.384 1.742 1.89 1.783.494.027 1.645-.357 1.81-.344.164.014.315.083.424.206.535.31.85 1.715.905 2.14.027.233-.014.44-.11.562-.11.138-1.165.714-1.48 1.112-.855.982-.342 2.25-.068 2.606.26.37 1.22.905 1.288.96.15.137.26.302.315.494.146 1.413-.89 2.387-1.07 2.47zm-8.905-.535c.644 0 1.246-.123 1.822-.356.575-.248 1.082-.59 1.493-1.016.425-.425.754-.92 1-1.495.247-.562.357-1.18.357-1.81 0-.66-.11-1.262-.356-1.825-.248-.562-.577-1.056-1.002-1.48-.41-.427-.918-.756-1.493-1.003-.576-.233-1.178-.357-1.822-.357-.644 0-1.247.124-1.81.357-.56.247-1.067.576-1.478 1.002-.425.425-.768.92-1 1.48-.247.564-.37 1.167-.37 1.826 0 .644.123 1.248.37 1.81.232.563.575 1.07 1 1.495.424.426.917.768 1.48 1.016.56.233 1.164.356 1.808.356z\"></path></g></svg>设置</a>\n                        <a (click)=\"exit();\"><svg viewBox=\"0 0 20 20\" class=\"Icon Button-icon Icon--logout\" width=\"14\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 14px;\"><title></title><g><path d=\"M0 10C0 7.242 1.154 4.58 3.167 2.697c.51-.477 1.31-.45 1.79.06.475.51.45 1.31-.06 1.787C3.37 5.975 2.53 7.91 2.53 10c0 4.118 3.35 7.468 7.47 7.468 4.12 0 7.47-3.35 7.47-7.47 0-2.04-.81-3.948-2.28-5.37-.5-.485-.514-1.286-.028-1.788.485-.5 1.286-.517 1.79-.03C18.915 4.712 20 7.265 20 10c0 5.512-4.486 9.998-10 9.998s-10-4.486-10-10zm8.7-.483V1.26C8.7.564 9.26 0 9.96 0c.695 0 1.26.564 1.26 1.26v8.257c0 .696-.565 1.26-1.26 1.26-.698 0-1.26-.564-1.26-1.26z\"></path></g></svg>退出</a>\n                    </div>\n                </div>\n            </div>\n        </div>\n\n    </header>\n</div>"
 
 /***/ }),
 
@@ -286,7 +286,7 @@ IheaderComponent = __decorate([
             ])
         ]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* Router */]) === "function" && _a || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* Router */]) === "function" && _a || Object])
 ], IheaderComponent);
 
 var _a;
@@ -322,7 +322,7 @@ IheaderModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */]
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
         ],
         exports: [__WEBPACK_IMPORTED_MODULE_3__iheader_component__["a" /* IheaderComponent */]],
         declarations: [__WEBPACK_IMPORTED_MODULE_3__iheader_component__["a" /* IheaderComponent */]]
@@ -330,6 +330,111 @@ IheaderModule = __decorate([
 ], IheaderModule);
 
 //# sourceMappingURL=iheader.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/home/share-card/share-card.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"share-card-component\">\n    <div *ngFor=\"let data of datas\" class=\"cards\" [routerLink]=\"['/open-share',data._id]\">\n        <header>\n            <a href=\"\">\n                <img [src]=\"data.userimg\" alt=\"\">\n            </a>\n            <a class=\"name\">{{data.name}}</a>\n            <p class=\"time\"><svg t=\"1501160305879\" class=\"icon\" style=\"\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"3546\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"20\" height=\"20\"><defs><style type=\"text/css\"></style></defs><path d=\"M512 832c-176.448 0-320-143.552-320-320S335.552 192 512 192s320 143.552 320 320-143.552 320-320 320m0-704C300.256 128 128 300.256 128 512s172.256 384 384 384 384-172.256 384-384S723.744 128 512 128\" p-id=\"3547\"></path><path d=\"M544 505.856V320a32 32 0 0 0-64 0v199.104c0 8.48 3.36 16.64 9.376 22.624l107.296 107.296a31.904 31.904 0 0 0 45.248 0 32 32 0 0 0 0-45.248L544 505.856z\" p-id=\"3548\"></path></svg>:{{data.time\n                | date}}</p>\n        </header>\n        <div class=\"imgs-wrap\">\n            <div *ngFor=\"let item of data.img\" class=\"imgs\" [style.background]=\"'url('+item.src+')'\"></div>\n        </div>\n        <p class=\"text\">{{data.text}}</p>\n        <nav>\n            <a href=\"\">\n                <svg viewBox=\"0 0 20 18\" xmlns=\"http://www.w3.org/2000/svg\" class=\"Icon Icon--like\" width=\"13\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 13px;\"><title></title><g><path d=\"M.718 7.024c-.718 0-.718.63-.718.63l.996 9.693c0 .703.718.65.718.65h1.45c.916 0 .847-.65.847-.65V7.793c-.09-.88-.853-.79-.846-.79l-2.446.02zm11.727-.05S13.2 5.396 13.6 2.89C13.765.03 11.55-.6 10.565.53c-1.014 1.232 0 2.056-4.45 5.83C5.336 6.965 5 8.01 5 8.997v6.998c-.016 1.104.49 2 1.99 2h7.586c2.097 0 2.86-1.416 2.86-1.416s2.178-5.402 2.346-5.91c1.047-3.516-1.95-3.704-1.95-3.704l-5.387.007z\"></path></g></svg>                感谢:0\n            </a>\n            <a href=\"\">\n                <svg viewBox=\"0 0 18 18\" xmlns=\"http://www.w3.org/2000/svg\" class=\"Icon Icon--comment Icon--left\" width=\"12\" height=\"16\" aria-hidden=\"true\" style=\"height: 16px; width: 12px;\"><title></title><g><path d=\"M7.24 16.313c-.272-.047-.553.026-.77.2-1.106.813-2.406 1.324-3.77 1.482-.16.017-.313-.06-.394-.197-.082-.136-.077-.308.012-.44.528-.656.906-1.42 1.11-2.237.04-.222-.046-.45-.226-.588C1.212 13.052.027 10.73 0 8.25 0 3.7 4.03 0 9 0s9 3.7 9 8.25-4.373 9.108-10.76 8.063z\"></path></g></svg>                评论:0\n            </a>\n            <a href=\"\">\n                <svg viewBox=\"0 0 20 20\" class=\"Icon TopstorySideBar-navIcon Icon--star\" width=\"15\" height=\"15\" aria-hidden=\"true\" style=\"height: 15px; width: 15px;\"><title></title><g><path d=\"M3.515 17.64l.918-5.355-3.89-3.792c-.926-.902-.64-1.784.64-1.97L6.56 5.74 8.964.87c.572-1.16 1.5-1.16 2.072 0l2.404 4.87 5.377.783c1.28.186 1.566 1.068.64 1.97l-3.89 3.793.918 5.354c.22 1.274-.532 1.82-1.676 1.218L10 16.33l-4.808 2.528c-1.145.602-1.896.056-1.677-1.218z\"></path></g></svg>                收藏:0\n            </a>\n        </nav>\n    </div>\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/home/share-card/share-card.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".share-card-component .cards {\n  width: 100%;\n  outline: none;\n  padding: 16px 20px;\n  background: #fff;\n  margin-bottom: 10px;\n  border: 1px solid #e7eaf1;\n  box-sizing: border-box;\n  border-radius: 2px;\n  box-shadow: 0 1px 3px rgba(0, 37, 55, 0.05); }\n  .share-card-component .cards header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .share-card-component .cards header img {\n      width: 30px;\n      height: 30px;\n      border-radius: 9999px;\n      border: 2px solid #f7fafc;\n      box-sizing: border-box;\n      vertical-align: text-bottom; }\n    .share-card-component .cards header .name {\n      margin: 0;\n      font-weight: 400;\n      margin-left: 15px; }\n    .share-card-component .cards header .time {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      -webkit-box-pack: end;\n          -ms-flex-pack: end;\n              justify-content: flex-end;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      color: #9fadc7; }\n      .share-card-component .cards header .time svg {\n        vertical-align: text-bottom;\n        fill: #9fadc7;\n        width: 20px;\n        height: 20px; }\n  .share-card-component .cards .imgs-wrap {\n    width: 100%;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex; }\n    .share-card-component .cards .imgs-wrap .imgs {\n      width: 150px;\n      height: 150px;\n      margin-right: 12px;\n      background-position: center center !important;\n      background-repeat: no-repeat !important;\n      background-size: cover !important; }\n  .share-card-component .cards .text {\n    font-size: 17px;\n    line-height: 28px;\n    color: #666; }\n  .share-card-component .cards nav {\n    padding-top: 20px;\n    color: #9fadc7; }\n    .share-card-component .cards nav a {\n      font-size: 15px;\n      line-height: 15px;\n      padding-right: 15px;\n      text-decoration: none;\n      color: #9fadc7; }\n    .share-card-component .cards nav svg {\n      width: 16px;\n      height: 16px;\n      margin-right: 8px;\n      vertical-align: text-bottom;\n      fill: #9fadc7; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/home/share-card/share-card.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareCardComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ShareCardComponent = (function () {
+    function ShareCardComponent() {
+        this.datas = [];
+    }
+    ShareCardComponent.prototype.ngOnInit = function () {
+    };
+    return ShareCardComponent;
+}());
+__decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["P" /* Input */])(),
+    __metadata("design:type", Object)
+], ShareCardComponent.prototype, "datas", void 0);
+ShareCardComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-share-card',
+        template: __webpack_require__("../../../../../src/app/components/home/share-card/share-card.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/home/share-card/share-card.component.scss")]
+    }),
+    __metadata("design:paramtypes", [])
+], ShareCardComponent);
+
+//# sourceMappingURL=share-card.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/home/share-card/share-card.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__share_card_component__ = __webpack_require__("../../../../../src/app/components/home/share-card/share-card.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareCardModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+var ShareCardModule = (function () {
+    function ShareCardModule() {
+    }
+    return ShareCardModule;
+}());
+ShareCardModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
+        ],
+        exports: [__WEBPACK_IMPORTED_MODULE_3__share_card_component__["a" /* ShareCardComponent */]],
+        declarations: [__WEBPACK_IMPORTED_MODULE_3__share_card_component__["a" /* ShareCardComponent */]]
+    })
+], ShareCardModule);
+
+//# sourceMappingURL=share-card.module.js.map
 
 /***/ }),
 
@@ -424,7 +529,7 @@ SideBarModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* RouterModule */]
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
         ],
         exports: [__WEBPACK_IMPORTED_MODULE_3__side_bar_component__["a" /* SideBarComponent */]],
         declarations: [__WEBPACK_IMPORTED_MODULE_3__side_bar_component__["a" /* SideBarComponent */]]
@@ -537,6 +642,67 @@ StepsModule = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/home/index/article/article.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  article works!\n</p>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/index/article/article.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/index/article/article.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ArticleComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ArticleComponent = (function () {
+    function ArticleComponent() {
+    }
+    ArticleComponent.prototype.ngOnInit = function () {
+    };
+    return ArticleComponent;
+}());
+ArticleComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-article',
+        template: __webpack_require__("../../../../../src/app/home/index/article/article.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/home/index/article/article.component.scss")]
+    }),
+    __metadata("design:paramtypes", [])
+], ArticleComponent);
+
+//# sourceMappingURL=article.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/home/index/home/home.component.html":
 /***/ (function(module, exports) {
 
@@ -589,6 +755,7 @@ var HomeComponent = (function () {
         this.userService = userService;
         this.datas = [];
         this.iswork = false;
+        this.userService.nowRouter = 'index';
         this.getdata();
         this.userService.home_get_data.subscribe(function () {
             _this.getdata();
@@ -640,6 +807,8 @@ var _a, _b;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home_component__ = __webpack_require__("../../../../../src/app/home/index/home/home.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__work_work_component__ = __webpack_require__("../../../../../src/app/home/index/work/work.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__share_share_component__ = __webpack_require__("../../../../../src/app/home/index/share/share.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__open_share_open_share_component__ = __webpack_require__("../../../../../src/app/home/index/open-share/open-share.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__article_article_component__ = __webpack_require__("../../../../../src/app/home/index/article/article.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IndexRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -647,6 +816,8 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -662,6 +833,8 @@ var routes = [
             { path: 'home', component: __WEBPACK_IMPORTED_MODULE_3__home_home_component__["a" /* HomeComponent */] },
             { path: 'share', component: __WEBPACK_IMPORTED_MODULE_5__share_share_component__["a" /* ShareComponent */] },
             { path: 'work/:id', component: __WEBPACK_IMPORTED_MODULE_4__work_work_component__["a" /* WorkComponent */] },
+            { path: 'open-share/:id', component: __WEBPACK_IMPORTED_MODULE_6__open_share_open_share_component__["a" /* OpenShareComponent */] },
+            { path: 'article', component: __WEBPACK_IMPORTED_MODULE_7__article_article_component__["a" /* ArticleComponent */] },
         ],
     }
 ];
@@ -672,8 +845,8 @@ var IndexRoutingModule = (function () {
 }());
 IndexRoutingModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
-        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */].forChild(routes)],
-        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["b" /* RouterModule */]]
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */].forChild(routes)],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["c" /* RouterModule */]]
     })
 ], IndexRoutingModule);
 
@@ -712,6 +885,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_user_service__ = __webpack_require__("../../../../../src/app/service/user.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return IndexComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -724,12 +898,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var IndexComponent = (function () {
-    function IndexComponent(userService) {
+    function IndexComponent(router, userService) {
+        var _this = this;
+        this.router = router;
         this.userService = userService;
         this.user = {};
         this.itimer = null;
         this.user = JSON.parse(localStorage.user);
+        this.userService.scrollToTop.subscribe(function () {
+            _this.scrollToTop();
+        });
     }
     IndexComponent.prototype.ngOnInit = function () {
     };
@@ -752,7 +932,16 @@ var IndexComponent = (function () {
         //文档高度:ev.target.scrollHeight  可视窗口高度:clientHeight  scrollTop
         var evtarget = ev.target;
         if (evtarget.scrollHeight == evtarget.clientHeight + evtarget.scrollTop) {
-            this.userService.home_get_data.emit();
+            switch (this.userService.nowRouter) {
+                case 'index':
+                    this.userService.home_get_data.emit();
+                    break;
+                case 'share':
+                    this.userService.share_get_data.emit();
+                    break;
+                default:
+                    break;
+            }
         }
     };
     return IndexComponent;
@@ -767,10 +956,10 @@ IndexComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/home/index/index.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/index/index.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__service_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__service_user_service__["a" /* UserService */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["b" /* Router */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__service_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__service_user_service__["a" /* UserService */]) === "function" && _c || Object])
 ], IndexComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=index.component.js.map
 
 /***/ }),
@@ -791,7 +980,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__work_work_component__ = __webpack_require__("../../../../../src/app/home/index/work/work.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__components_home_steps_steps_module__ = __webpack_require__("../../../../../src/app/components/home/steps/steps.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_home_food_food_module__ = __webpack_require__("../../../../../src/app/components/home/food/food.module.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__share_share_component__ = __webpack_require__("../../../../../src/app/home/index/share/share.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__components_home_share_card_share_card_module__ = __webpack_require__("../../../../../src/app/components/home/share-card/share-card.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__share_share_component__ = __webpack_require__("../../../../../src/app/home/index/share/share.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__open_share_open_share_component__ = __webpack_require__("../../../../../src/app/home/index/open-share/open-share.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__article_article_component__ = __webpack_require__("../../../../../src/app/home/index/article/article.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IndexModule", function() { return IndexModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -799,6 +991,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -825,9 +1020,10 @@ IndexModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_6__components_home_card_card_module__["a" /* CardModule */],
             __WEBPACK_IMPORTED_MODULE_7__components_home_side_bar_side_bar_module__["a" /* SideBarModule */],
             __WEBPACK_IMPORTED_MODULE_9__components_home_steps_steps_module__["a" /* StepsModule */],
-            __WEBPACK_IMPORTED_MODULE_10__components_home_food_food_module__["a" /* FoodModule */]
+            __WEBPACK_IMPORTED_MODULE_10__components_home_food_food_module__["a" /* FoodModule */],
+            __WEBPACK_IMPORTED_MODULE_11__components_home_share_card_share_card_module__["a" /* ShareCardModule */]
         ],
-        declarations: [__WEBPACK_IMPORTED_MODULE_2__index_component__["a" /* IndexComponent */], __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_8__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_11__share_share_component__["a" /* ShareComponent */]]
+        declarations: [__WEBPACK_IMPORTED_MODULE_2__index_component__["a" /* IndexComponent */], __WEBPACK_IMPORTED_MODULE_5__home_home_component__["a" /* HomeComponent */], __WEBPACK_IMPORTED_MODULE_8__work_work_component__["a" /* WorkComponent */], __WEBPACK_IMPORTED_MODULE_12__share_share_component__["a" /* ShareComponent */], __WEBPACK_IMPORTED_MODULE_13__open_share_open_share_component__["a" /* OpenShareComponent */], __WEBPACK_IMPORTED_MODULE_14__article_article_component__["a" /* ArticleComponent */]]
     })
 ], IndexModule);
 
@@ -835,10 +1031,98 @@ IndexModule = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/home/index/open-share/open-share.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"open-share-page\">\n    <header>\n        <a href=\"\">\n            <img [src]=\"data.userimg\" alt=\"\">\n        </a>\n        <a class=\"name\">{{data.name}}</a>\n        <p class=\"time\"><svg t=\"1501160305879\" class=\"icon\" style=\"\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"3546\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" width=\"20\" height=\"20\"><defs><style type=\"text/css\"></style></defs><path d=\"M512 832c-176.448 0-320-143.552-320-320S335.552 192 512 192s320 143.552 320 320-143.552 320-320 320m0-704C300.256 128 128 300.256 128 512s172.256 384 384 384 384-172.256 384-384S723.744 128 512 128\" p-id=\"3547\"></path><path d=\"M544 505.856V320a32 32 0 0 0-64 0v199.104c0 8.48 3.36 16.64 9.376 22.624l107.296 107.296a31.904 31.904 0 0 0 45.248 0 32 32 0 0 0 0-45.248L544 505.856z\" p-id=\"3548\"></path></svg>:{{data.time\n            | date}}</p>\n    </header>\n    <p class=\"text\">{{data.text}}</p>\n    <img class=\"imgs\" [src]=\"item.src\" *ngFor=\"let item of data.img; let i=index\" />\n\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/index/open-share/open-share.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".open-share-page {\n  width: 694px;\n  min-height: 603px;\n  outline: none;\n  padding: 16px 20px;\n  background: #fff;\n  margin-bottom: 10px;\n  border: 1px solid #e7eaf1;\n  box-sizing: border-box;\n  box-shadow: 0 1px 3px rgba(0, 37, 55, 0.05); }\n  .open-share-page .text {\n    color: #848484;\n    font-size: 15px;\n    line-height: 28px;\n    margin-bottom: 40px; }\n  .open-share-page header {\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .open-share-page header img {\n      width: 30px;\n      height: 30px;\n      border-radius: 9999px;\n      border: 2px solid #f7fafc;\n      box-sizing: border-box;\n      vertical-align: text-bottom; }\n    .open-share-page header .name {\n      margin: 0;\n      font-weight: 400;\n      margin-left: 15px; }\n    .open-share-page header .time {\n      display: -webkit-box;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-box-flex: 1;\n          -ms-flex: 1;\n              flex: 1;\n      -webkit-box-pack: end;\n          -ms-flex-pack: end;\n              justify-content: flex-end;\n      -webkit-box-align: center;\n          -ms-flex-align: center;\n              align-items: center;\n      color: #9fadc7; }\n      .open-share-page header .time svg {\n        vertical-align: text-bottom;\n        fill: #9fadc7;\n        width: 20px;\n        height: 20px; }\n  .open-share-page .imgs {\n    width: 95%;\n    margin: 0 auto;\n    border: 6px solid #e7eaf1;\n    box-sizing: border-box;\n    display: block;\n    margin-bottom: 10px; }\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/home/index/open-share/open-share.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__service_user_service__ = __webpack_require__("../../../../../src/app/service/user.service.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OpenShareComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var OpenShareComponent = (function () {
+    function OpenShareComponent(activatedRoute, http, userService) {
+        this.activatedRoute = activatedRoute;
+        this.http = http;
+        this.userService = userService;
+        this.data = [];
+        this.userService.scrollToTop.emit();
+        this._id = this.activatedRoute.snapshot.params['id'];
+        this.getdata();
+    }
+    OpenShareComponent.prototype.getdata = function () {
+        var _this = this;
+        var url = "http://www.devonhello.com/chihu2/share_dec";
+        var headers = new __WEBPACK_IMPORTED_MODULE_2__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "id=" + this._id, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.data = res.json()[0];
+            console.log(_this.data);
+        });
+    };
+    OpenShareComponent.prototype.ngOnInit = function () {
+    };
+    return OpenShareComponent;
+}());
+OpenShareComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["e" /* Component */])({
+        selector: 'app-open-share',
+        template: __webpack_require__("../../../../../src/app/home/index/open-share/open-share.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/home/index/open-share/open-share.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__service_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__service_user_service__["a" /* UserService */]) === "function" && _c || Object])
+], OpenShareComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=open-share.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/home/index/share/share.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  share works!\n</p>\n"
+module.exports = "<app-share-card [datas]=\"data\"></app-share-card>"
 
 /***/ }),
 
@@ -865,6 +1149,8 @@ module.exports = module.exports.toString();
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__service_user_service__ = __webpack_require__("../../../../../src/app/service/user.service.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ShareComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -876,10 +1162,40 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
+
 var ShareComponent = (function () {
-    function ShareComponent() {
+    function ShareComponent(http, userService) {
+        var _this = this;
+        this.http = http;
+        this.userService = userService;
+        this.data = [];
+        this.iswork = false;
+        this.userService.nowRouter = 'share';
+        this.getdata();
+        this.userService.share_get_data.subscribe(function () {
+            _this.getdata();
+        });
     }
     ShareComponent.prototype.ngOnInit = function () {
+    };
+    //获取分享数据
+    ShareComponent.prototype.getdata = function () {
+        var _this = this;
+        if (this.iswork) {
+            return;
+        }
+        this.iswork = true;
+        var url = "http://www.devonhello.com/chihu2/share";
+        var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
+        headers.append('Content-Type', 'application/x-www-form-urlencoded');
+        this.http.post(url, "len=" + this.data.length, {
+            headers: headers
+        })
+            .subscribe(function (res) {
+            _this.iswork = false;
+            _this.data = _this.data.concat(res.json());
+        });
     };
     return ShareComponent;
 }());
@@ -889,9 +1205,10 @@ ShareComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/home/index/share/share.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/index/share/share.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["c" /* Http */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__service_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__service_user_service__["a" /* UserService */]) === "function" && _b || Object])
 ], ShareComponent);
 
+var _a, _b;
 //# sourceMappingURL=share.component.js.map
 
 /***/ }),
@@ -928,6 +1245,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__service_user_service__ = __webpack_require__("../../../../../src/app/service/user.service.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WorkComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -941,11 +1259,14 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var WorkComponent = (function () {
-    function WorkComponent(activatedRoute, http) {
+    function WorkComponent(activatedRoute, http, userService) {
         this.activatedRoute = activatedRoute;
         this.http = http;
+        this.userService = userService;
         this.data = [];
+        this.userService.scrollToTop.emit();
         this._id = this.activatedRoute.snapshot.params['id'];
         this.getdata();
     }
@@ -971,10 +1292,10 @@ WorkComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/home/index/work/work.component.html"),
         styles: [__webpack_require__("../../../../../src/app/home/index/work/work.component.scss")]
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */]) === "function" && _b || Object])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* ActivatedRoute */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["c" /* Http */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__service_user_service__["a" /* UserService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__service_user_service__["a" /* UserService */]) === "function" && _c || Object])
 ], WorkComponent);
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=work.component.js.map
 
 /***/ })

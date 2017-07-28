@@ -1,5 +1,5 @@
 <div class="share-card-component">
-    <div *ngFor="let data of datas" class="cards">
+    <div *ngFor="let data of datas" class="cards" [routerLink]="['/open-share',data._id]">
         <header>
             <a href="">
                 <img [src]="data.userimg" alt="">

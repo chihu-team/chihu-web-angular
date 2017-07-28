@@ -47,8 +47,8 @@ export default StyleSheet.create({
     'display': 'flex'
   },
   'share-card-component cards imgs-wrap imgs': {
-    'width': [{ 'unit': 'px', 'value': 130 }],
-    'height': [{ 'unit': 'px', 'value': 130 }],
+    'width': [{ 'unit': 'px', 'value': 150 }],
+    'height': [{ 'unit': 'px', 'value': 150 }],
     'marginRight': [{ 'unit': 'px', 'value': 12 }],
     'backgroundPosition': 'center center !important',
     'backgroundRepeat': 'no-repeat !important',

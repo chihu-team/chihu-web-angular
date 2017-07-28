@@ -17,7 +17,9 @@ export class IndexComponent implements OnInit {
 
   constructor( public router: Router, public userService: UserService ) {
     this.user = JSON.parse( localStorage.user );
-    
+    this.userService.scrollToTop.subscribe(()=>{
+      this.scrollToTop();
+    })
     
   }
 

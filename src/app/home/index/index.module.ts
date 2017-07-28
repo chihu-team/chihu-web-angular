@@ -11,6 +11,8 @@ import { StepsModule } from '../../components/home/steps/steps.module';
 import { FoodModule } from '../../components/home/food/food.module';
 import { ShareCardModule } from '../../components/home/share-card/share-card.module';
 import { ShareComponent } from './share/share.component';
+import { OpenShareComponent } from './open-share/open-share.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   imports: [
@@ -23,6 +25,6 @@ import { ShareComponent } from './share/share.component';
     FoodModule,
     ShareCardModule
   ],
-  declarations: [IndexComponent, HomeComponent, WorkComponent, ShareComponent]
+  declarations: [IndexComponent, HomeComponent, WorkComponent, ShareComponent, OpenShareComponent, ArticleComponent]
 })
 export class IndexModule { }

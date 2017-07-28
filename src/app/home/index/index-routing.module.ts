@@ -6,6 +6,8 @@ import { SigninComponent } from '../login/signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { ShareComponent } from './share/share.component';
+import { OpenShareComponent } from './open-share/open-share.component';
+import { ArticleComponent } from './article/article.component';
 
 const routes: Routes = [
   {
@@ -16,6 +18,8 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: 'share', component: ShareComponent },
       { path: 'work/:id', component: WorkComponent },
+      { path: 'open-share/:id', component: OpenShareComponent },
+      { path: 'article', component: ArticleComponent },
     ],
   }
 ];

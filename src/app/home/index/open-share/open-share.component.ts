@@ -4,27 +4,23 @@ import { Headers, Http } from '@angular/http';
 import { UserService } from '../../../service/user.service';
 
 @Component({
-  selector: 'app-work',
-  templateUrl: './work.component.html',
-  styleUrls: ['./work.component.scss']
+  selector: 'app-open-share',
+  templateUrl: './open-share.component.html',
+  styleUrls: ['./open-share.component.scss']
 })
-export class WorkComponent implements OnInit {
+export class OpenShareComponent implements OnInit {
 
   _id:any;
   data:any = [];
 
-  constructor( public activatedRoute: ActivatedRoute, public http:Http, public userService: UserService ) {
+  constructor( public activatedRoute: ActivatedRoute,  public http:Http, public userService: UserService ) {
     this.userService.scrollToTop.emit();
     this._id = this.activatedRoute.snapshot.params['id'];
     this.getdata();
   }
 
-  ngOnInit() {
-  }
-
   getdata() {
-    
-    let url = "http://www.devonhello.com/chihu2/article_dec";
+    let url = "http://www.devonhello.com/chihu2/share_dec";
 
     var headers = new Headers();
     headers.append('Content-Type', 'application/x-www-form-urlencoded');
@@ -34,8 +30,11 @@ export class WorkComponent implements OnInit {
     })
       .subscribe((res) => {
         this.data = res.json()[0];
-        
+        console.log(this.data);
       });
+  }
+
+  ngOnInit() {
   }
 
 }
