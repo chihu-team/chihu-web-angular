@@ -84,5 +84,23 @@ export default StyleSheet.create({
   },
   'side-bar-components TopstorySideBar ilist TopstorySideBar-navList li:hover': {
     'background': '#ebf3fb'
+  },
+  'side-bar-components copy': {
+    'fontSize': [{ 'unit': 'px', 'value': 14 }],
+    'display': 'block',
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'paddingTop': [{ 'unit': 'px', 'value': 6 }],
+    'color': '#ababab',
+    'textAlign': 'center'
+  },
+  'side-bar-components copy a': {
+    'color': '#ababab'
+  },
+  'side-bar-components copy svg': {
+    'width': [{ 'unit': 'px', 'value': 14 }],
+    'height': [{ 'unit': 'px', 'value': 14 }],
+    'fill': '#ababab',
+    'marginRight': [{ 'unit': 'px', 'value': 10 }],
+    'verticalAlign': 'text-bottom'
   }
 });

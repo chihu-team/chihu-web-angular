@@ -4,10 +4,15 @@ import { Injectable, EventEmitter } from '@angular/core';
 export class UserService {
 
   //公共事件
-  change: EventEmitter<number>;
+  home_get_data: EventEmitter<number>;
+  share_get_data: EventEmitter<number>;
+
+  //当前路由hash
+  nowRouter = '';
 
   constructor() {
-    this.change = new EventEmitter();
+    this.home_get_data = new EventEmitter();
+    this.share_get_data = new EventEmitter();
   }
 
 }

@@ -1,0 +1,78 @@
+.share-card-component {
+    .cards {
+        width: 100%;
+        outline: none;
+        padding: 16px 20px;
+        background: #fff;
+        margin-bottom: 10px;
+        border: 1px solid #e7eaf1;
+        box-sizing: border-box;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
+        header {
+            display: flex;
+            align-items: center;
+            img {
+                width: 30px;
+                height: 30px;
+                border-radius: 9999px;
+                border: 2px solid #f7fafc;
+                box-sizing: border-box;
+                vertical-align: text-bottom;
+            }
+            .name {
+                margin: 0;
+                font-weight: 400;
+                margin-left: 15px;
+            }
+            .time {
+                display: flex;
+                flex: 1;
+                justify-content: flex-end;
+                align-items: center;
+                color: #9fadc7;
+                svg {
+                    vertical-align: text-bottom;
+                    fill: #9fadc7;
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+        .imgs-wrap {
+            width: 100%;
+            display: flex;
+            .imgs {
+                width: 130px;
+                height: 130px;
+                margin-right: 12px;
+                background-position: center center !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+            }
+        }
+        .text {
+            font-size: 17px;
+            line-height: 28px;
+            color: #666;
+        }
+        nav {
+            padding-top: 20px;
+            color: #9fadc7;
+            a {
+                font-size: 15px;
+                line-height: 15px;
+                padding-right: 15px;
+                text-decoration: none;
+                color: #9fadc7;
+            }
+            svg {
+                width: 16px;
+                height: 16px;
+                margin-right: 8px;
+                vertical-align: text-bottom;
+                fill: #9fadc7;
+            }
+        }
+    }
+}

@@ -9,6 +9,8 @@ import { SideBarModule } from '../../components/home/side-bar/side-bar.module';
 import { WorkComponent } from './work/work.component';
 import { StepsModule } from '../../components/home/steps/steps.module';
 import { FoodModule } from '../../components/home/food/food.module';
+import { ShareCardModule } from '../../components/home/share-card/share-card.module';
+import { ShareComponent } from './share/share.component';
 
 @NgModule({
   imports: [
@@ -18,8 +20,9 @@ import { FoodModule } from '../../components/home/food/food.module';
     CardModule,
     SideBarModule,
     StepsModule,
-    FoodModule
+    FoodModule,
+    ShareCardModule
   ],
-  declarations: [IndexComponent, HomeComponent, WorkComponent]
+  declarations: [IndexComponent, HomeComponent, WorkComponent, ShareComponent]
 })
 export class IndexModule { }

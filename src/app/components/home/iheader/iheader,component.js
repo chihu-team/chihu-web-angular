@@ -108,7 +108,7 @@ export default StyleSheet.create({
     'color': '#8590a6'
   },
   'header AppHeader-inner nav active': {
-    'color': '#333'
+    'color': '#0f88eb'
   },
   'header AppHeader-inner user-data': {
     'display': 'flex',

@@ -81,4 +81,22 @@
             }
         }
     }
+    .copy {
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        padding-top: 6px;
+        color: #ababab;
+        text-align: center;
+        a {
+            color: #ababab;
+        }
+        svg {
+            width: 14px;
+            height: 14px;
+            fill: #ababab;
+            margin-right: 10px;
+            vertical-align: text-bottom;
+        }
+    }
 }

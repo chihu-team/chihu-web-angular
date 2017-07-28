@@ -1,5 +1,6 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, Inject } from '@angular/core';
 import { UserService } from '../../service/user.service';
+import { Router } from '@angular/router';
 
 declare var document:any;
 @Component({
@@ -14,7 +15,7 @@ export class IndexComponent implements OnInit {
   
   itimer = null;
 
-  constructor( public userService: UserService ) {
+  constructor( public router: Router, public userService: UserService ) {
     this.user = JSON.parse( localStorage.user );
     
     
@@ -52,7 +53,17 @@ export class IndexComponent implements OnInit {
 
     if(evtarget.scrollHeight == evtarget.clientHeight + evtarget.scrollTop){
       
-      this.userService.change.emit();
+      switch (this.userService.nowRouter) {
+        case 'index':
+          this.userService.home_get_data.emit();
+          break;
+        case 'share':
+          this.userService.share_get_data.emit();
+          break;
+        default:
+          break;
+      }
+      
     }
     
   }
