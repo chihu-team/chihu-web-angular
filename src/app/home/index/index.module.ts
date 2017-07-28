@@ -6,6 +6,9 @@ import { IheaderModule } from '../../components/home/iheader/iheader.module';
 import { HomeComponent } from './home/home.component';
 import { CardModule } from '../../components/home/card/card.module';
 import { SideBarModule } from '../../components/home/side-bar/side-bar.module';
+import { WorkComponent } from './work/work.component';
+import { StepsModule } from '../../components/home/steps/steps.module';
+import { FoodModule } from '../../components/home/food/food.module';
 
 @NgModule({
   imports: [
@@ -13,8 +16,10 @@ import { SideBarModule } from '../../components/home/side-bar/side-bar.module';
     IndexRoutingModule,
     IheaderModule,
     CardModule,
-    SideBarModule
+    SideBarModule,
+    StepsModule,
+    FoodModule
   ],
-  declarations: [IndexComponent, HomeComponent]
+  declarations: [IndexComponent, HomeComponent, WorkComponent]
 })
 export class IndexModule { }

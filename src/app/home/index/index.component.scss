@@ -1,4 +1,24 @@
 .index-page {
+    transition: all 400ms;
+    .scrollToTop {
+        position: fixed;
+        cursor: pointer;
+        bottom: 30px;
+        right: 40px;
+        width: 40px;
+        height: 40px;
+        background: #e7eaf1;
+        align-items: center;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 4px;
+        svg {
+            fill: #9aaabf;
+            width: 16px;
+            height: 16px;
+            vertical-align: text-bottom;
+        }
+    }
     position: absolute;
     top: 0;
     left: 0;
@@ -94,6 +114,16 @@
                     }
                 }
             }
+        }
+    }
+    .loading-svg {
+        width: 100%;
+        clear: both;
+        height: 100px;
+        text-align: center;
+        svg {
+            margin-top: 30px;
+            fill: #0f88eb;
         }
     }
 }

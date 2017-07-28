@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   'index-page': {
+    'transition': 'all 400ms',
     'position': 'absolute',
     'top': [{ 'unit': 'px', 'value': 0 }],
     'left': [{ 'unit': 'px', 'value': 0 }],
@@ -9,6 +10,25 @@ export default StyleSheet.create({
     'bottom': [{ 'unit': 'px', 'value': 0 }],
     'overflow': 'auto',
     'background': '#f7fafc'
+  },
+  'index-page scrollToTop': {
+    'position': 'fixed',
+    'cursor': 'pointer',
+    'bottom': [{ 'unit': 'px', 'value': 30 }],
+    'right': [{ 'unit': 'px', 'value': 40 }],
+    'width': [{ 'unit': 'px', 'value': 40 }],
+    'height': [{ 'unit': 'px', 'value': 40 }],
+    'background': '#e7eaf1',
+    'alignItems': 'center',
+    'textAlign': 'center',
+    'lineHeight': [{ 'unit': 'px', 'value': 40 }],
+    'borderRadius': '4px'
+  },
+  'index-page scrollToTop svg': {
+    'fill': '#9aaabf',
+    'width': [{ 'unit': 'px', 'value': 16 }],
+    'height': [{ 'unit': 'px', 'value': 16 }],
+    'verticalAlign': 'text-bottom'
   },
   'index-page main': {
     'width': [{ 'unit': 'px', 'value': 1000 }],
@@ -99,5 +119,15 @@ export default StyleSheet.create({
   },
   'index-page main TopstorySideBar ilist TopstorySideBar-navList li:hover': {
     'background': '#ebf3fb'
+  },
+  'index-page loading-svg': {
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'clear': 'both',
+    'height': [{ 'unit': 'px', 'value': 100 }],
+    'textAlign': 'center'
+  },
+  'index-page loading-svg svg': {
+    'marginTop': [{ 'unit': 'px', 'value': 30 }],
+    'fill': '#0f88eb'
   }
 });

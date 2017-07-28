@@ -1,8 +1,13 @@
-import { Injectable } from '@angular/core';
+import { Injectable, EventEmitter } from '@angular/core';
 
 @Injectable()
 export class UserService {
 
-  constructor() { }
+  //公共事件
+  change: EventEmitter<number>;
+
+  constructor() {
+    this.change = new EventEmitter();
+  }
 
 }

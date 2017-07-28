@@ -1,5 +1,5 @@
 <div class="card-component" *ngFor="let data of datas">
-    <div class="cards" *ngIf="data.type == '1'">
+    <div [routerLink]="['/work',data._id]" class="cards" *ngIf="data.type == '1'">
         <header>
             <a href="">
                 <img [src]="data.userimg" alt="">
@@ -10,7 +10,9 @@
         </header>
         <h2 class="ContentItem-title"><a href="" target="_blank">{{data.title}}</a></h2>
         <div class="RichContent">
-            <div class="RichContent-cover" [style.background]="'url('+data.workbanner+')'"></div>
+            <div class="RichContent-banner">
+                <div class="RichContent-cover" [style.background]="'url('+data.workbanner+')'"></div>
+            </div>
             <div class="RichContent-inner">
                 <p>{{data.text}}</p>
             </div>

@@ -2,9 +2,11 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   'card-component': {
-    'width': [{ 'unit': 'px', 'value': 694 }]
+    'width': [{ 'unit': 'px', 'value': 694 }],
+    'cursor': 'pointer'
   },
   'card-component cards': {
+    'outline': 'none',
     'padding': [{ 'unit': 'px', 'value': 16 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 16 }, { 'unit': 'px', 'value': 20 }],
     'background': '#fff',
     'marginBottom': [{ 'unit': 'px', 'value': 10 }],
@@ -57,9 +59,15 @@ export default StyleSheet.create({
     'width': [{ 'unit': '%H', 'value': 1 }],
     'overflow': 'hidden'
   },
+  'card-component cards RichContent RichContent-banner': {
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'height': [{ 'unit': 'px', 'value': 305 }],
+    'overflow': 'hidden'
+  },
   'card-component cards RichContent RichContent-cover': {
     'width': [{ 'unit': '%H', 'value': 1 }],
     'height': [{ 'unit': 'px', 'value': 305 }],
+    'transition': 'all 400ms ease',
     'backgroundPosition': 'center center !important',
     'backgroundRepeat': 'no-repeat !important',
     'backgroundSize': 'cover !important'
@@ -69,6 +77,9 @@ export default StyleSheet.create({
     'lineHeight': [{ 'unit': 'px', 'value': 1.8 }],
     'color': '#666',
     'width': [{ 'unit': '%H', 'value': 1 }]
+  },
+  'card-component cards RichContent:hover RichContent-cover': {
+    'transform': 'scale(1.2) rotate(4deg)'
   },
   'card-component cards nav': {
     'paddingTop': [{ 'unit': 'px', 'value': 20 }],

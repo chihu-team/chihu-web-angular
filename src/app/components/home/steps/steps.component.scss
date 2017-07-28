@@ -1,0 +1,24 @@
+.steps-component {
+    .steps {
+        svg {
+            margin-right: 12px;
+        }
+        .steps-list {
+            width: 100%;
+            margin-bottom: 70px;
+            .steps-banner {
+                width: 100%;
+                height: 330px;
+                margin-bottom: 16px;
+                background-position: center center !important;
+                background-repeat: no-repeat !important;
+                background-size: cover !important;
+            }
+            .dec {
+                font-size: 16px;
+                line-height: 26px;
+                color: #9fadc7;
+            }
+        }
+    }
+}

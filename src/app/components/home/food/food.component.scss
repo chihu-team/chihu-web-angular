@@ -1,0 +1,23 @@
+.food-component {
+    .food {
+        margin-bottom: 50px;
+        svg {
+            margin-right: 12px;
+        }
+        .food-list {
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            align-items: center;
+            border-bottom: 1px dashed #d6d6d6;
+            .food-name {
+                display: flex;
+                flex: 1;
+            }
+            .food-len {
+                display: flex;
+                flex: 1;
+            }
+        }
+    }
+}

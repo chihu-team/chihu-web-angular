@@ -126,6 +126,7 @@ export default StyleSheet.create({
   'header AppHeader-inner userimg': {
     'width': [{ 'unit': 'px', 'value': 34 }],
     'height': [{ 'unit': 'px', 'value': 34 }],
-    'display': 'block'
+    'display': 'block',
+    'cursor': 'pointer'
   }
 });

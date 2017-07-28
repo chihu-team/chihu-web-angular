@@ -35,7 +35,8 @@ export default StyleSheet.create({
     'lineHeight': [{ 'unit': 'px', 'value': 41 }],
     'color': '#fff',
     'textAlign': 'center',
-    'borderRadius': '4px'
+    'borderRadius': '4px',
+    'cursor': 'pointer'
   },
   'agreement-tip': {
     'fontSize': [{ 'unit': 'px', 'value': 13 }],

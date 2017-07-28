@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Headers, Http } from '@angular/http';
+import { UserService } from '../../../service/user.service';
 
 @Component({
   selector: 'app-home',
@@ -9,9 +10,13 @@ import { Headers, Http } from '@angular/http';
 export class HomeComponent implements OnInit {
 
   datas = [];
+  iswork = false;
 
-  constructor( public http:Http ) {
+  constructor( public http:Http, public userService: UserService ) {
     this.getdata();
+    this.userService.change.subscribe(()=>{
+      this.getdata();
+    })
   }
 
   ngOnInit() {
@@ -19,7 +24,10 @@ export class HomeComponent implements OnInit {
 
   //获取数据
   getdata() {
-    
+    if(this.iswork){
+      return;
+    }
+    this.iswork = true;
     let url = "http://www.devonhello.com/chihu2/home";
 
     var headers = new Headers();
@@ -29,12 +37,11 @@ export class HomeComponent implements OnInit {
       headers: headers
     })
       .subscribe((res) => {
-        
+        this.iswork = false;
         this.datas = this.datas.concat(res.json());
         
       });
   }
-
   
 
 }
