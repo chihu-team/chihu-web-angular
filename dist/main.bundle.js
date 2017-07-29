@@ -1,4 +1,4 @@
-webpackJsonp([3],{
+webpackJsonp([5],{
 
 /***/ "../../../../../src async recursive":
 /***/ (function(module, exports, __webpack_require__) {
@@ -6,18 +6,24 @@ webpackJsonp([3],{
 var map = {
 	"app/home/index/index.module": [
 		"../../../../../src/app/home/index/index.module.ts",
+		1,
 		0
 	],
 	"app/home/login/login.module": [
 		"../../../../../src/app/home/login/login.module.ts",
-		1
+		2
+	],
+	"app/home/people/people.module": [
+		"../../../../../src/app/home/people/people.module.ts",
+		0,
+		3
 	]
 };
 function webpackAsyncContext(req) {
 	var ids = map[req];
 	if(!ids)
 		return Promise.reject(new Error("Cannot find module '" + req + "'."));
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		return __webpack_require__(ids[0]);
 	});
 };
@@ -64,6 +70,11 @@ var appRoutes = [
         loadChildren: 'app/home/index/index.module#IndexModule',
         canActivate: [__WEBPACK_IMPORTED_MODULE_3__can_activate_service__["a" /* CanActivateService */]]
     },
+    {
+        path: 'people/:id',
+        loadChildren: 'app/home/people/people.module#PeopleModule',
+        canActivate: [__WEBPACK_IMPORTED_MODULE_3__can_activate_service__["a" /* CanActivateService */]]
+    },
 ];
 var AppRoutesModule = (function () {
     function AppRoutesModule() {
@@ -74,10 +85,10 @@ AppRoutesModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["b" /* NgModule */])({
         imports: [
             __WEBPACK_IMPORTED_MODULE_1__angular_common__["a" /* CommonModule */],
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */].forRoot(appRoutes, { useHash: true })
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */].forRoot(appRoutes, { useHash: true })
         ],
         exports: [
-            __WEBPACK_IMPORTED_MODULE_2__angular_router__["c" /* RouterModule */]
+            __WEBPACK_IMPORTED_MODULE_2__angular_router__["a" /* RouterModule */]
         ],
         declarations: []
     })
@@ -255,10 +266,12 @@ var UserService = (function () {
     function UserService() {
         //当前路由hash
         this.nowRouter = '';
+        //用户资料
+        this._user = {};
         this.home_get_data = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* EventEmitter */]();
         this.share_get_data = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* EventEmitter */]();
         this.scrollToTop = new __WEBPACK_IMPORTED_MODULE_0__angular_core__["c" /* EventEmitter */]();
-        ;
+        this._user = JSON.parse(localStorage.user);
     }
     return UserService;
 }());

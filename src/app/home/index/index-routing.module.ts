@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { IndexComponent } from '../index/index.component';
-import { SignupComponent } from '../login/signup/signup.component';
-import { SigninComponent } from '../login/signin/signin.component';
+import { IndexComponent } from './index.component';
 import { HomeComponent } from './home/home.component';
 import { WorkComponent } from './work/work.component';
 import { ShareComponent } from './share/share.component';

@@ -13,6 +13,7 @@ export class ShareComponent implements OnInit {
   iswork = false;
 
   constructor( public http:Http, public userService: UserService ) {
+    this.userService.scrollToTop.emit();
     this.userService.nowRouter = 'share';
     this.getdata();
     this.userService.share_get_data.subscribe(()=>{

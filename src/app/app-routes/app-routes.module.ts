@@ -19,6 +19,11 @@ const appRoutes: Routes = [
     loadChildren: 'app/home/index/index.module#IndexModule',
     canActivate:[CanActivateService]
   },
+  { 
+    path: 'people/:id', 
+    loadChildren: 'app/home/people/people.module#PeopleModule',
+    canActivate:[CanActivateService]
+  },
 ]
 
 @NgModule({

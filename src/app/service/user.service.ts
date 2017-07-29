@@ -13,10 +13,14 @@ export class UserService {
   //当前路由hash
   nowRouter = '';
 
+  //用户资料
+  _user:any = {};
+
   constructor() {
     this.home_get_data = new EventEmitter();
     this.share_get_data = new EventEmitter();
-    this.scrollToTop = new EventEmitter();;
+    this.scrollToTop = new EventEmitter();
+    this._user = JSON.parse( localStorage.user );
   }
 
 }

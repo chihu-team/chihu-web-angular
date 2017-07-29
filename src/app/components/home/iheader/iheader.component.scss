@@ -61,6 +61,7 @@ header {
                 a {
                     display: block;
                     height: 36px;
+                    transition: all .5s;
                     line-height: 36px;
                     color: #262626;
                     padding: 0 20px;
@@ -76,6 +77,9 @@ header {
                         margin-right: 12px;
                         fill: #9fadc7;
                     }
+                }
+                a:hover {
+                    background: #ebf3fb;
                 }
             }
         }

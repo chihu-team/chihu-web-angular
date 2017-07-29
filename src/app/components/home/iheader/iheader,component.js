@@ -67,6 +67,7 @@ export default StyleSheet.create({
   'header ih_wrap popover-content-me Menu a': {
     'display': 'block',
     'height': [{ 'unit': 'px', 'value': 36 }],
+    'transition': 'all .5s',
     'lineHeight': [{ 'unit': 'px', 'value': 36 }],
     'color': '#262626',
     'padding': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 20 }],
@@ -82,6 +83,9 @@ export default StyleSheet.create({
     'verticalAlign': 'text-bottom',
     'marginRight': [{ 'unit': 'px', 'value': 12 }],
     'fill': '#9fadc7'
+  },
+  'header ih_wrap popover-content-me Menu a:hover': {
+    'background': '#ebf3fb'
   },
   'header AppHeader-inner': {
     'display': 'flex',

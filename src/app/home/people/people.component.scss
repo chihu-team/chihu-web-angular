@@ -1,0 +1,143 @@
+.people-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: #f7fafc;
+    .main {
+        width: 1000px;
+        display: flex;
+        padding: 0 16px;
+        margin: 10px auto;
+        .card {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 297px;
+            background: #fff;
+            border: 1px solid #e7eaf1;
+            border-radius: 2px;
+            box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
+            box-sizing: border-box;
+            .colorBlock {
+                width: 100%;
+                height: 132px;
+                background: #96a1a9;
+            }
+            .ProfileHeader-wrapper {
+                width: 100%;
+                position: relative;
+                background: #fff;
+                box-sizing: border-box;
+                .ProfileHeader-main {
+                    position: relative;
+                    margin: 0 20px 24px;
+                    .ProfileHeader-avatar {
+                        border: 5px solid #fff;
+                        border-radius: 8px;
+                        position: absolute;
+                        top: -50px;
+                        left: 0;
+                        box-sizing: border-box;
+                        overflow: hidden;
+                    }
+                    .ProfileHeader-content {
+                        margin-left: 200px;
+                        color: #9fadc7;
+                        position: relative;
+                        .ButtonGroup {
+                            position: absolute;
+                            bottom: 10px;
+                            right: 0;
+                            .buttons {
+                                background: #0F88E6;
+                                color: #fff;
+                                display: inline-block;
+                                padding: 0 16px;
+                                font-size: 14px;
+                                line-height: 32px;
+                                text-align: center;
+                                border-radius: 3px;
+                                cursor: pointer;
+                                svg {
+                                    vertical-align: text-bottom;
+                                    fill: #fff;
+                                }
+                            }
+                            .chat {
+                                margin-left: 15px;
+                                background: none;
+                                color: #8590a6;
+                                border: 1px solid #ccd8e1;
+                                box-sizing: border-box;
+                                svg {
+                                    fill: #8590a6;
+                                }
+                            }
+                        }
+                        svg {
+                            fill: #9fadc7;
+                        }
+                        .basic {
+                            display: flex;
+                            display: -webkit-flex;
+                            p {
+                                display: flex;
+                                margin-right: 32px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Profile-content-left {
+        width: 694px;
+        display: block;
+        height: 400px;
+        background: #fff;
+        border: 1px solid #e7eaf1;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
+        box-sizing: border-box;
+    }
+    .Profile-content-right {
+        width: 296px;
+        display: block;
+        background: #fff;
+        border: 1px solid #e7eaf1;
+        border-radius: 2px;
+        box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
+        box-sizing: border-box;
+        margin-left: 10px;
+        text-align: center;
+        height: 300px;
+        color: #ababab;
+        img {
+            display: block;
+            width: 50%;
+            margin: 0 auto;
+        }
+        .copy {
+            font-size: 14px;
+            display: block;
+            width: 100%;
+            padding-top: 6px;
+            color: #ababab;
+            text-align: center;
+            a {
+                color: #ababab;
+            }
+            svg {
+                width: 14px;
+                height: 14px;
+                fill: #ababab;
+                margin-right: 10px;
+                vertical-align: text-bottom;
+            }
+        }
+    }
+}

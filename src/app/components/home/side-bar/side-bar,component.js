@@ -73,7 +73,8 @@ export default StyleSheet.create({
     'padding': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 15 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 15 }],
     'height': [{ 'unit': 'px', 'value': 40 }],
     'overflow': 'hidden',
-    'fontSize': [{ 'unit': 'px', 'value': 14 }]
+    'fontSize': [{ 'unit': 'px', 'value': 14 }],
+    'color': '#9fadc7'
   },
   'side-bar-components TopstorySideBar ilist TopstorySideBar-navList li svg': {
     'fill': '#9fadc7',

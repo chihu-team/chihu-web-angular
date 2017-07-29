@@ -1,5 +1,6 @@
 import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
 import { Router } from '@angular/router';
+import { UserService } from '../../../service/user.service';
 
 @Component({
   selector: 'app-iheader',
@@ -23,8 +24,11 @@ import { Router } from '@angular/router';
 export class IheaderComponent implements OnInit {
 
   status:string = 'on';
+  user:any = {};
 
-  constructor( public router: Router ) { }
+  constructor( public router: Router, public userService: UserService ) {
+    this.user = this.userService._user;
+  }
 
   toggleStatus(){
     this.status = (this.status==="on")?'off':'on';
