@@ -1,25 +1,19 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { IndexComponent } from './index.component';
-import { HomeComponent } from './home/home.component';
-import { WorkComponent } from './work/work.component';
-import { ShareComponent } from './share/share.component';
-import { OpenShareComponent } from './open-share/open-share.component';
-import { ArticleComponent } from './article/article.component';
-import { OpenArticleComponent } from './open-article/open-article.component';
 
 const routes: Routes = [
   {
     path: '',
     component: IndexComponent,
     children: [
-      { path: '', component: HomeComponent },
-      { path: 'home', component: HomeComponent },
-      { path: 'share', component: ShareComponent },
-      { path: 'work/:id', component: WorkComponent },
-      { path: 'open-share/:id', component: OpenShareComponent },
-      { path: 'article', component: ArticleComponent },
-      { path: 'open-article/:id', component: OpenArticleComponent },
+      { path: '', loadChildren: 'app/home/index/home/home.module#HomeModule' },
+      { path: 'home', loadChildren: 'app/home/index/home/home.module#HomeModule' },
+      { path: 'share', loadChildren: 'app/home/index/share/share.module#ShareModule' },
+      { path: 'work/:id', loadChildren: 'app/home/index/work/work.module#WorkModule' },
+      { path: 'open-share/:id', loadChildren: 'app/home/index/open-share/open-share.module#OpenShareModule' },
+      { path: 'article', loadChildren: 'app/home/index/article/article.module#ArticleModule' },
+      { path: 'open-article/:id', loadChildren: 'app/home/index/open-article/open-article.module#OpenArticleModule' }
     ],
   }
 ];

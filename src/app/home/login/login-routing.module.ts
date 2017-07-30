@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from '../login/login.component';
-import { SignupComponent } from '../login/signup/signup.component';
-import { SigninComponent } from '../login/signin/signin.component';
+import { LoginComponent } from './login.component';
 
 const routes: Routes = [
   {
     path: '',
     component: LoginComponent,
     children: [
-      { path: '', component: SignupComponent },
-      { path: 'signup', component: SignupComponent },
-      { path: 'signin', component: SigninComponent }
+      { path: '', loadChildren: 'app/home/login/signup/signup.module#SignupModule' },
+      { path: 'signup', loadChildren: 'app/home/login/signup/signup.module#SignupModule' },
+      { path: 'signin', loadChildren: 'app/home/login/signin/signin.module#SigninModule' },
+      
     ],
   }
 ];
