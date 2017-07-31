@@ -16,5 +16,8 @@
     <a href=""><img src="https://img.shields.io/badge/QQ-849996781-blue.svg" alt=""></a>
 </p>
 <br/>
-
+<p align="center">
+  <img src="https://github.com/chihu2/chihu-web-angular/blob/master/doc/chihu2-web.gif" />
+</p>
+<br/>
 <p align="center">Live Demo: http://www.devonhello.com/chihu</p>
