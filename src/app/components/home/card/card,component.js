@@ -2,8 +2,7 @@ import { StyleSheet } from 'react-native';
 
 export default StyleSheet.create({
   'card-component': {
-    'width': [{ 'unit': 'px', 'value': 694 }],
-    'cursor': 'pointer'
+    'width': [{ 'unit': 'px', 'value': 694 }]
   },
   'card-component cards': {
     'outline': 'none',
@@ -18,6 +17,10 @@ export default StyleSheet.create({
   'card-component cards header': {
     'display': 'flex',
     'alignItems': 'center'
+  },
+  'card-component cards header a': {
+    'cursor': 'pointer',
+    'outline': 'none'
   },
   'card-component cards header img': {
     'width': [{ 'unit': 'px', 'value': 30 }],
@@ -44,6 +47,10 @@ export default StyleSheet.create({
     'fill': '#9fadc7',
     'width': [{ 'unit': 'px', 'value': 20 }],
     'height': [{ 'unit': 'px', 'value': 20 }]
+  },
+  'card-component cards cont-wrap': {
+    'cursor': 'pointer',
+    'outline': 'none'
   },
   'card-component cards ContentItem-title': {
     'marginTop': [{ 'unit': 'px', 'value': 0 }],

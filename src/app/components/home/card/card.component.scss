@@ -1,6 +1,5 @@
 .card-component {
     width: 694px;
-    cursor: pointer;
     .cards {
         outline: none;
         padding: 16px 20px;
@@ -13,6 +12,10 @@
         header {
             display: flex;
             align-items: center;
+            a {
+                cursor: pointer;
+                outline: none;
+            }
             img {
                 width: 30px;
                 height: 30px;
@@ -39,6 +42,10 @@
                     height: 20px;
                 }
             }
+        }
+        .cont-wrap {
+            cursor: pointer;
+            outline: none;
         }
         .ContentItem-title {
             margin-top: 0;

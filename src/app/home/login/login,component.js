@@ -25,7 +25,7 @@ export default StyleSheet.create({
   },
   'top h2': {
     'color': '#555',
-    'margin': [{ 'unit': 'px', 'value': 30 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 26 }, { 'unit': 'px', 'value': 0 }],
+    'margin': [{ 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 26 }, { 'unit': 'px', 'value': 0 }],
     'fontWeight': '400',
     'fontSize': [{ 'unit': 'px', 'value': 18 }],
     'lineHeight': [{ 'unit': 'px', 'value': 1 }]
@@ -40,6 +40,28 @@ export default StyleSheet.create({
     'lineHeight': [{ 'unit': 'px', 'value': 41 }],
     'marginTop': [{ 'unit': 'px', 'value': 48 }],
     'fontSize': [{ 'unit': 'px', 'value': 14 }]
+  },
+  'copy-wrap': {
+    'textAlign': 'center',
+    'paddingTop': [{ 'unit': 'px', 'value': 15 }]
+  },
+  'copy-wrap copy': {
+    'fontSize': [{ 'unit': 'px', 'value': 14 }],
+    'display': 'block',
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'paddingTop': [{ 'unit': 'px', 'value': 6 }],
+    'color': '#ababab',
+    'textAlign': 'center'
+  },
+  'copy-wrap copy a': {
+    'color': '#ababab'
+  },
+  'copy-wrap copy svg': {
+    'width': [{ 'unit': 'px', 'value': 14 }],
+    'height': [{ 'unit': 'px', 'value': 14 }],
+    'fill': '#ababab',
+    'marginRight': [{ 'unit': 'px', 'value': 10 }],
+    'verticalAlign': 'text-bottom'
   },
   'index-tab-navs': {
     'width': [{ 'unit': 'px', 'value': 300 }],
