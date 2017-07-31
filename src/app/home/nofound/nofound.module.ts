@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PeopleComponent } from './people.component';
-import { PeopleRoutingModule } from './people-routing.module';
+import { NofoundComponent } from './nofound.component';
+import { NofoundRoutingModule } from './nofound-routing.module';
 import { IheaderModule } from '../../components/home/iheader/iheader.module';
 
 @NgModule({
   imports: [
     CommonModule,
-    PeopleRoutingModule,
+    NofoundRoutingModule,
     IheaderModule
   ],
-  declarations: [PeopleComponent]
+  declarations: [NofoundComponent]
 })
-export class PeopleModule { }
+export class NofoundModule { }

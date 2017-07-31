@@ -10,31 +10,17 @@ import { UserService } from '../../../service/user.service';
 })
 export class OpenShareComponent implements OnInit {
 
-  _id:any;
-  data:any = [];
+  
+  data:any = {};
 
   constructor( public activatedRoute: ActivatedRoute,  public http:Http, public userService: UserService ) {
     this.userService.scrollToTop.emit();
-    this._id = this.activatedRoute.snapshot.params['id'];
-    this.getdata();
-  }
-
-  getdata() {
-    let url = "http://www.devonhello.com/chihu2/share_dec";
-
-    var headers = new Headers();
-    headers.append('Content-Type', 'application/x-www-form-urlencoded');
-
-    this.http.post(url, "id=" + this._id, {
-      headers: headers
-    })
-      .subscribe((res) => {
-        this.data = res.json()[0];
-        console.log(this.data);
-      });
   }
 
   ngOnInit() {
+    this.activatedRoute.data.subscribe((data)=>{
+      this.data = data['data'];
+    });
   }
 
 }

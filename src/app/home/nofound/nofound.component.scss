@@ -1,0 +1,47 @@
+.nofound-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    background: #f7fafc;
+    .err {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+        h1 {
+            font-size: 300px;
+            margin: 0;
+            color: #666;
+            font-weight: 500;
+        }
+        a {
+            color: #5079d9;
+            cursor: pointer;
+            transition: all .5s;
+        }
+        a:hover {
+            color: #aaa;
+        }
+    }
+    .copy-wrap {
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        text-align: center;
+        color: #777;
+        .copy {
+            display: block;
+            svg {
+                vertical-align: text-bottom;
+                margin-right: 10px;
+                fill: #777;
+            }
+            a {
+                color: #777;
+                cursor: pointer;
+            }
+        }
+    }
+}

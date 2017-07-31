@@ -140,4 +140,19 @@
             }
         }
     }
+    nav {
+        width: 100%;
+        border-bottom: 1px solid #f0f2f7;
+        display: flex;
+        display: -webkit-flex;
+        a {
+            padding: 14px 20px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #2e2e2e;
+        }
+        .active {
+            border-bottom: 3px solid #0f88eb;
+        }
+    }
 }

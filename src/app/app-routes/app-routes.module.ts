@@ -24,6 +24,12 @@ const appRoutes: Routes = [
     loadChildren: 'app/home/people/people.module#PeopleModule',
     canActivate:[CanActivateService]
   },
+  {
+        path: '404', loadChildren: 'app/home/nofound/nofound.module#NofoundModule'
+    },
+    {
+        path: '**', redirectTo: '/404'
+    }
 ]
 
 @NgModule({

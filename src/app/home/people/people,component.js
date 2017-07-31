@@ -143,5 +143,20 @@ export default StyleSheet.create({
     'fill': '#ababab',
     'marginRight': [{ 'unit': 'px', 'value': 10 }],
     'verticalAlign': 'text-bottom'
+  },
+  'people-page nav': {
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'borderBottom': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#f0f2f7' }],
+    'display': 'flex',
+    'display': '-webkit-flex'
+  },
+  'people-page nav a': {
+    'padding': [{ 'unit': 'px', 'value': 14 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 14 }, { 'unit': 'px', 'value': 20 }],
+    'boxSizing': 'border-box',
+    'fontSize': [{ 'unit': 'px', 'value': 16 }],
+    'color': '#2e2e2e'
+  },
+  'people-page nav active': {
+    'borderBottom': [{ 'unit': 'px', 'value': 3 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#0f88eb' }]
   }
 });

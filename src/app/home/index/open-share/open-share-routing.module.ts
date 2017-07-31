@@ -1,10 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { OpenShareComponent } from './open-share.component';
+import { ResolveShareService } from '../../../app-routes/resolve-share.service';
 
 const routes: Routes = [{
   path:'',
-  component:OpenShareComponent
+  component:OpenShareComponent,
+  resolve:{
+    data: ResolveShareService
+  }
 }];
 
 @NgModule({

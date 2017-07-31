@@ -34,6 +34,15 @@
     </section>
     <section class="main">
         <div class="Profile-content-left">
+            <nav>
+                <a [routerLink]="['work']" routerLinkActive="active">作品</a>
+                <a [routerLink]="['share']" routerLinkActive="active">分享</a>
+                <a [routerLink]="['article']" routerLinkActive="active">文章</a>
+                <a [routerLink]="['que']" routerLinkActive="active">提问</a>
+                <a [routerLink]="['collect']" routerLinkActive="active">收藏</a>
+                <a [routerLink]="['fork-que']" routerLinkActive="active">关注问题</a>
+                <a [routerLink]="['fork-user']" routerLinkActive="active">关注</a>
+            </nav>
             <router-outlet></router-outlet>
         </div>
         <div class="Profile-content-right">
