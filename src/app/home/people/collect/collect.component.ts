@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-collect',
@@ -7,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CollectComponent implements OnInit {
 
-  constructor() { }
+  _id;
+  data:any = [];
+
+  constructor( public router: Router ) {
+    this._id = this.router.url.split('/')[2];
+    
+  }
 
   ngOnInit() {
   }

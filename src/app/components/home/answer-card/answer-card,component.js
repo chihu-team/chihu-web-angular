@@ -45,6 +45,10 @@ export default StyleSheet.create({
     'width': [{ 'unit': 'px', 'value': 20 }],
     'height': [{ 'unit': 'px', 'value': 20 }]
   },
+  'answer-card-component wrap': {
+    'outline': 'none',
+    'cursor': 'pointer'
+  },
   'answer-card-component nav': {
     'paddingTop': [{ 'unit': 'px', 'value': 20 }],
     'color': '#9fadc7'

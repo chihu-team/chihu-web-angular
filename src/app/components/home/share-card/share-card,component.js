@@ -42,6 +42,10 @@ export default StyleSheet.create({
     'width': [{ 'unit': 'px', 'value': 20 }],
     'height': [{ 'unit': 'px', 'value': 20 }]
   },
+  'share-card-component cards wrap': {
+    'outline': 'none',
+    'cursor': 'pointer'
+  },
   'share-card-component cards imgs-wrap': {
     'width': [{ 'unit': '%H', 'value': 1 }],
     'display': 'flex'

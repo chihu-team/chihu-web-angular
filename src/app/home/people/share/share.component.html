@@ -1,3 +1,4 @@
-<p>
-  share works!
-</p>
+<div class="people-share-page">
+    <app-no-data *ngIf="data.length == 0"></app-no-data>
+    <app-share-card [datas]="data"></app-share-card>
+</div>

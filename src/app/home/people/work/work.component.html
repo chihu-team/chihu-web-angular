@@ -1,3 +1,4 @@
-<p>
-  work works!
-</p>
+<div class="people-work-page">
+    <app-no-data *ngIf="data.length == 0"></app-no-data>
+    <app-card [datas]="data"></app-card>
+</div>

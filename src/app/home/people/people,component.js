@@ -35,7 +35,6 @@ export default StyleSheet.create({
   'people-page main card ProfileHeader-wrapper': {
     'width': [{ 'unit': '%H', 'value': 1 }],
     'position': 'relative',
-    'background': '#fff',
     'boxSizing': 'border-box'
   },
   'people-page main card ProfileHeader-wrapper ProfileHeader-main': {
@@ -44,6 +43,7 @@ export default StyleSheet.create({
   },
   'people-page main card ProfileHeader-wrapper ProfileHeader-main ProfileHeader-avatar': {
     'border': [{ 'unit': 'px', 'value': 5 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#fff' }],
+    'background': '#f5f5f5',
     'borderRadius': '8px',
     'position': 'absolute',
     'top': [{ 'unit': 'px', 'value': -50 }],
@@ -101,12 +101,26 @@ export default StyleSheet.create({
   'people-page Profile-content-left': {
     'width': [{ 'unit': 'px', 'value': 694 }],
     'display': 'block',
-    'height': [{ 'unit': 'px', 'value': 400 }],
-    'background': '#fff',
-    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#e7eaf1' }],
     'borderRadius': '2px',
     'boxShadow': [{ 'unit': 'px', 'value': 0 }, { 'unit': 'px', 'value': 1 }, { 'unit': 'px', 'value': 3 }, { 'unit': 'string', 'value': 'rgba(0, 37, 55, 0.05)' }],
     'boxSizing': 'border-box'
+  },
+  'people-page Profile-content-left nav': {
+    'background': '#fff',
+    'border': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#e7eaf1' }],
+    'boxSizing': 'border-box',
+    'width': [{ 'unit': '%H', 'value': 1 }],
+    'display': 'flex',
+    'display': '-webkit-flex'
+  },
+  'people-page Profile-content-left nav a': {
+    'padding': [{ 'unit': 'px', 'value': 14 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 14 }, { 'unit': 'px', 'value': 20 }],
+    'boxSizing': 'border-box',
+    'fontSize': [{ 'unit': 'px', 'value': 16 }],
+    'color': '#2e2e2e'
+  },
+  'people-page Profile-content-left nav active': {
+    'borderBottom': [{ 'unit': 'px', 'value': 3 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#0f88eb' }]
   },
   'people-page Profile-content-right': {
     'width': [{ 'unit': 'px', 'value': 296 }],
@@ -143,20 +157,5 @@ export default StyleSheet.create({
     'fill': '#ababab',
     'marginRight': [{ 'unit': 'px', 'value': 10 }],
     'verticalAlign': 'text-bottom'
-  },
-  'people-page nav': {
-    'width': [{ 'unit': '%H', 'value': 1 }],
-    'borderBottom': [{ 'unit': 'px', 'value': 1 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#f0f2f7' }],
-    'display': 'flex',
-    'display': '-webkit-flex'
-  },
-  'people-page nav a': {
-    'padding': [{ 'unit': 'px', 'value': 14 }, { 'unit': 'px', 'value': 20 }, { 'unit': 'px', 'value': 14 }, { 'unit': 'px', 'value': 20 }],
-    'boxSizing': 'border-box',
-    'fontSize': [{ 'unit': 'px', 'value': 16 }],
-    'color': '#2e2e2e'
-  },
-  'people-page nav active': {
-    'borderBottom': [{ 'unit': 'px', 'value': 3 }, { 'unit': 'string', 'value': 'solid' }, { 'unit': 'string', 'value': '#0f88eb' }]
   }
 });

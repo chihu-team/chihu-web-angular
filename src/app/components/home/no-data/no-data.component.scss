@@ -1,0 +1,15 @@
+.no-data-component {
+    background: #fff;
+    width: 100%;
+    height: 245px;
+    box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
+    box-sizing: border-box;
+    border: 1px solid #e7eaf1;
+    border-top: none;
+    .no-data {
+        text-align: center;
+        font-size: 15px;
+        color: #8590a6;
+        padding-top: 20px;
+    }
+}

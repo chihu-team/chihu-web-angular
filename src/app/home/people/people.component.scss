@@ -29,13 +29,13 @@
             .ProfileHeader-wrapper {
                 width: 100%;
                 position: relative;
-                background: #fff;
                 box-sizing: border-box;
                 .ProfileHeader-main {
                     position: relative;
                     margin: 0 20px 24px;
                     .ProfileHeader-avatar {
                         border: 5px solid #fff;
+                        background: #f5f5f5;
                         border-radius: 8px;
                         position: absolute;
                         top: -50px;
@@ -97,12 +97,26 @@
     .Profile-content-left {
         width: 694px;
         display: block;
-        height: 400px;
-        background: #fff;
-        border: 1px solid #e7eaf1;
         border-radius: 2px;
         box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
         box-sizing: border-box;
+        nav {
+            background: #fff;
+            border: 1px solid #e7eaf1;
+            box-sizing: border-box;
+            width: 100%;
+            display: flex;
+            display: -webkit-flex;
+            a {
+                padding: 14px 20px;
+                box-sizing: border-box;
+                font-size: 16px;
+                color: #2e2e2e;
+            }
+            .active {
+                border-bottom: 3px solid #0f88eb;
+            }
+        }
     }
     .Profile-content-right {
         width: 296px;
@@ -138,21 +152,6 @@
                 margin-right: 10px;
                 vertical-align: text-bottom;
             }
-        }
-    }
-    nav {
-        width: 100%;
-        border-bottom: 1px solid #f0f2f7;
-        display: flex;
-        display: -webkit-flex;
-        a {
-            padding: 14px 20px;
-            box-sizing: border-box;
-            font-size: 16px;
-            color: #2e2e2e;
-        }
-        .active {
-            border-bottom: 3px solid #0f88eb;
         }
     }
 }

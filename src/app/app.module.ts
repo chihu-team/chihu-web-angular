@@ -11,10 +11,9 @@ import { ResolvePeopleService } from './app-routes/resolve-people.service';
 import { UserService } from './service/user.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,
