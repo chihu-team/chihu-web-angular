@@ -12,20 +12,23 @@ export class HomeComponent implements OnInit {
   datas = [];
   iswork = false;
 
-  constructor( public http:Http, public userService: UserService ) {
+  constructor(public http: Http, public userService: UserService) {
+    
     this.userService.nowRouter = 'index';
     this.getdata();
-    this.userService.home_get_data.subscribe(()=>{
+    this.userService.home_get_data.subscribe(() => {
       this.getdata();
-    })
+    });
+    
   }
+
 
   ngOnInit() {
   }
 
   //获取数据
   getdata() {
-    if(this.iswork){
+    if (this.iswork) {
       return;
     }
     this.iswork = true;
@@ -43,6 +46,10 @@ export class HomeComponent implements OnInit {
         
       });
   }
-  
+
+  sendShare(){
+    this.userService.show_send_share.emit();
+  }
+
 
 }

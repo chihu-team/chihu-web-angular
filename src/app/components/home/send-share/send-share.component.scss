@@ -1,0 +1,110 @@
+.send-share-component {
+    .send-wrap {
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba(0, 0, 0, .47);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        z-index: -2;
+        .Modal-inner {
+            width: 595px;
+            display: flex;
+            position: relative;
+            background: #fff;
+            margin: 0 auto;
+            justify-content: center;
+            flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-box-orient: vertical;
+            box-shadow: 0 5px 20px 0 rgba(0, 34, 77, .5);
+            h3 {
+                text-align: center;
+            }
+            .content {
+                padding: 24px;
+                background: #fff;
+                .tip {
+                    font-size: 14px;
+                    color: #b3b3b3;
+                }
+                .imgs {
+                    width: 100%;
+                    display: flex;
+                    margin-bottom: 30px;
+                    .file {
+                        position: relative;
+                        cursor: pointer;
+                        display: inline-block;
+                        overflow: hidden;
+                        text-decoration: none;
+                        text-indent: 0;
+                        line-height: 20px;
+                        background-size: cover !important;
+                    }
+                    .file input {
+                        position: absolute;
+                        font-size: 100px;
+                        right: 0;
+                        top: 0;
+                        opacity: 0;
+                    }
+                    .file:hover {
+                        text-decoration: none;
+                    }
+                    .img-w {
+                        width: 80px;
+                        height: 80px;
+                        margin-right: 6px;
+                        background-size: cover !important;
+                    }
+                }
+                textarea {
+                    outline: none;
+                    resize: none;
+                    padding: 5%;
+                    margin-bottom: 12px;
+                    border: 1px solid #e7eaf1;
+                    width: 90%;
+                    font-size: 16px;
+                    line-height: 28px;
+                    height: 120px;
+                }
+                .send {
+                    width: 198px;
+                    height: 32px;
+                    cursor: pointer;
+                    background: #0d79d1;
+                    color: #fff;
+                    border-radius: 2px;
+                    text-align: center;
+                    margin: 0 auto;
+                    line-height: 32px;
+                    font-size: 14px;
+                }
+            }
+            .Modal-closeButton {
+                outline: none;
+                position: absolute;
+                top: 8px;
+                right: -60px;
+                padding: 12px;
+                height: auto;
+                line-height: inherit;
+                background: transparent;
+                border: none;
+                border-radius: 0;
+                cursor: pointer;
+                svg {
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}

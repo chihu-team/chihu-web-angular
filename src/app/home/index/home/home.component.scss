@@ -16,6 +16,10 @@
             display: inline-block;
         }
         .TopstoryHeader-nav {
+            a {
+                cursor: pointer;
+                outline: none;
+            }
             svg {
                 width: 16px;
                 height: 16px;
