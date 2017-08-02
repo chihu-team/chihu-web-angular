@@ -51,5 +51,8 @@ export class HomeComponent implements OnInit {
     this.userService.show_send_share.emit();
   }
 
+  sendQue(){
+    this.userService.show_send_que.emit();
+  }
 
 }

@@ -1,0 +1,14 @@
+<div class="send-que-component">
+    <div class="send-wrap" [@sendQueStatus]="status">
+        <div class="Modal-inner">
+            <h3>我要提问</h3>
+            <div class="content">
+                <input [(ngModel)]="title" maxlength="30" type="text" placeholder="我的问题...">
+                <p class="tip">提示：最多150个字符</p>
+                <textarea [(ngModel)]="text" maxlength="150" placeholder="说点什么......"></textarea>
+                <div (click)="send();" class="send">发布</div>
+            </div>
+            <button (click)="colseShare();" class="Modal-closeButton" aria-label="关闭" type="button"><svg viewBox="0 0 14 14" class="Icon Modal-closeIcon Icon--remove" width="16" height="16" aria-hidden="true" style="height: 16px; width: 16px;"><title></title><g><path d="M8.486 7l5.208-5.207c.408-.408.405-1.072-.006-1.483-.413-.413-1.074-.413-1.482-.005L7 5.515 1.793.304C1.385-.103.72-.1.31.31-.103.724-.103 1.385.305 1.793L5.515 7l-5.21 5.207c-.407.408-.404 1.072.007 1.483.413.413 1.074.413 1.482.005L7 8.485l5.207 5.21c.408.407 1.072.404 1.483-.007.413-.413.413-1.074.005-1.482L8.485 7z"></path></g></svg></button>
+        </div>
+    </div>
+</div>

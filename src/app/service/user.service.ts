@@ -7,6 +7,7 @@ export class UserService {
   home_get_data: EventEmitter<number>;
   share_get_data: EventEmitter<number>;
   show_send_share: EventEmitter<number>;
+  show_send_que: EventEmitter<number>;
 
   //scrollToTop
   scrollToTop: EventEmitter<number>;
@@ -22,6 +23,7 @@ export class UserService {
     this.share_get_data = new EventEmitter();
     this.scrollToTop = new EventEmitter();
     this.show_send_share = new EventEmitter();
+    this.show_send_que = new EventEmitter();
     this._user = JSON.parse( localStorage.user );
   }
 

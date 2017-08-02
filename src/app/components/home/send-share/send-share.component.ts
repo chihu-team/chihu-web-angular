@@ -73,6 +73,11 @@ export class SendShareComponent implements OnInit {
 
   colseShare() {
     this.isLoading = false;
+    this.uploader.clearQueue();
+    this.uploader.cancelAll();
+    this.text = '';
+    this.uploaderArr = [];
+    this.itemArr = [];
     this.status = 'on';
   }
 
@@ -88,9 +93,13 @@ export class SendShareComponent implements OnInit {
         headers: headers
       })
         .subscribe((res) => {
+          this.isLoading = false;
           if (res.json()['result']['ok'] == '1') {
-            this.isLoading = false;
             
+            this.uploader.clearQueue();
+            this.uploaderArr = [];
+            this.itemArr = [];
+            this.text = '';
           }else{
             alert("系统错误");
           }

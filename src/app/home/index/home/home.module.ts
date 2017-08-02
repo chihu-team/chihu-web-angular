@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { CardModule } from '../../../components/home/card/card.module';
 import { SendShareModule } from '../../../components/home/send-share/send-share.module';
+import { SendQueModule } from '../../../components/home/send-que/send-que.module';
 import { FileUploadModule } from 'ng2-file-upload';
 
 @NgModule({
@@ -12,7 +13,8 @@ import { FileUploadModule } from 'ng2-file-upload';
     HomeRoutingModule,
     CardModule,
     FileUploadModule,
-    SendShareModule
+    SendShareModule,
+    SendQueModule
   ],
   declarations: [HomeComponent]
 })
