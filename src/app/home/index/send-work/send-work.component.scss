@@ -1,0 +1,93 @@
+.send-work-page {
+    width: 694px;
+    min-height: 603px;
+    outline: none;
+    padding: 16px 20px;
+    background: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #e7eaf1;
+    box-sizing: border-box;
+    box-shadow: 0 1px 3px rgba(0, 37, 55, .05);
+    color: #909090;
+    input {
+        outline: none;
+        resize: none;
+        padding: 1%;
+        margin-bottom: 12px;
+        border: 1px solid #f7f7f7;
+        width: 98%;
+        font-size: 16px;
+        line-height: 28px;
+        height: 28px;
+    }
+    .banner {
+        width: 100%;
+        height: 300px;
+        background: #f7f7f7;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: #c5c5c5;
+    }
+    textarea {
+        outline: none;
+        resize: none;
+        padding: 2%;
+        margin-bottom: 12px;
+        border: 1px solid #f7f7f7;
+        width: 96%;
+        font-size: 16px;
+        line-height: 28px;
+        height: 118px;
+    }
+    .food-wrap {
+        width: 100%;
+        display: flex;
+        input {
+            display: flex;
+            flex-grow: 1;
+            margin-bottom: 0;
+            color: #ababab;
+        }
+    }
+    .foods {
+        margin-bottom: 20px;
+    }
+    .step-wrap {
+        width: 100%;
+        display: flex;
+        textarea {
+            outline: none;
+            resize: none;
+            padding: 2%;
+            width: auto;
+            border: 1px solid #f7f7f7;
+            font-size: 16px;
+            line-height: 28px;
+            height: 118px;
+            display: flex;
+            flex-grow: 1;
+            margin-right: 8px;
+        }
+        .step-banner {
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: #c5c5c5;
+            flex-grow: 1;
+            height: 146px;
+            background: #f7f7f7;
+        }
+    }
+    .btn {
+        width: 130px;
+        height: 35px;
+        background: #56abe4;
+        color: #fff;
+        line-height: 2;
+        text-align: center;
+        cursor: pointer;
+    }
+}

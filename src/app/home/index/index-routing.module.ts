@@ -13,7 +13,8 @@ const routes: Routes = [
       { path: 'work/:id', loadChildren: 'app/home/index/work/work.module#WorkModule' },
       { path: 'open-share/:id', loadChildren: 'app/home/index/open-share/open-share.module#OpenShareModule' },
       { path: 'article', loadChildren: 'app/home/index/article/article.module#ArticleModule' },
-      { path: 'open-article/:id', loadChildren: 'app/home/index/open-article/open-article.module#OpenArticleModule' }
+      { path: 'open-article/:id', loadChildren: 'app/home/index/open-article/open-article.module#OpenArticleModule' },
+      { path: 'send-wrok', loadChildren: 'app/home/index/send-work/send-work.module#SendWorkModule' },
     ],
   }
 ];
