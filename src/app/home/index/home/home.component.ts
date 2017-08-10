@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import { UserService } from '../../../service/user.service';
 
@@ -7,19 +7,22 @@ import { UserService } from '../../../service/user.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
 
   datas = [];
   iswork = false;
+  getDataSub;
 
   constructor(public http: Http, public userService: UserService) {
-    
-    this.userService.nowRouter = 'index';
     this.getdata();
-    this.userService.home_get_data.subscribe(() => {
+    this.getDataSub = this.userService.home_get_data.subscribe(() => {
       this.getdata();
     });
     
+  }
+
+  ngOnDestroy() {
+    this.getDataSub.unsubscribe();
   }
 
 

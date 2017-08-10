@@ -13,7 +13,6 @@ export class ArticleComponent implements OnInit {
 
   constructor( public http:Http, public userService: UserService ) {
     this.userService.scrollToTop.emit();
-    this.userService.nowRouter = 'article';
     this.getdata();
   }
 

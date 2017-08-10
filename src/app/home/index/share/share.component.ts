@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Headers, Http } from '@angular/http';
 import { UserService } from '../../../service/user.service';
 
@@ -7,18 +7,22 @@ import { UserService } from '../../../service/user.service';
   templateUrl: './share.component.html',
   styleUrls: ['./share.component.scss']
 })
-export class ShareComponent implements OnInit {
+export class ShareComponent implements OnInit, OnDestroy {
 
   data:any = [];
   iswork = false;
+  getDataSub;
 
   constructor( public http:Http, public userService: UserService ) {
     this.userService.scrollToTop.emit();
-    this.userService.nowRouter = 'share';
     this.getdata();
-    this.userService.share_get_data.subscribe(()=>{
+    this.getDataSub = this.userService.share_get_data.subscribe(()=>{
       this.getdata();
     })
+  }
+
+  ngOnDestroy() {
+    this.getDataSub.unsubscribe();
   }
 
   ngOnInit() {
