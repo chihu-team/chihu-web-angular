@@ -20,4 +20,4 @@
   <img src="https://github.com/chihu2/chihu-web-angular/blob/master/doc/chihu2-web.gif" />
 </p>
 <br/>
-<p align="center">Live Demo: http://www.devonhello.com/chihu</p>
+<p align="center">Live Demo: https://chihu2.github.io/</p>
